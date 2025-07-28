@@ -1,0 +1,47 @@
+==== START logs for container manager of pod kube-system/eraser-controller-manager-67b6b4f999-vvclw ====
+{"level":"info","ts":1753373620.4591875,"logger":"setup","msg":"setting up manager","userAgent":"eraser/manager/v1.3.1 (linux/amd64) c0fd202cbbe95266d890d97f1c255f94f1c7c106/1706822660"}
+{"level":"info","ts":1753373620.5005429,"logger":"controller-runtime.metrics","msg":"Metrics server is starting to listen","addr":":8889"}
+{"level":"info","ts":1753373620.500774,"logger":"setup","msg":"setup controllers"}
+{"level":"info","ts":1753373620.5008023,"logger":"controllerRuntimeLogger","msg":"set up with manager"}
+{"level":"info","ts":1753373620.5008888,"logger":"controller","msg":"add collector controller","process":"imagecollector-controller"}
+{"level":"info","ts":1753373620.500955,"logger":"setup","msg":"starting manager"}
+{"level":"info","ts":1753373620.5009863,"logger":"controller","msg":"Queueing first ImageCollector reconcile...","process":"imagecollector-controller"}
+{"level":"info","ts":1753373620.5012083,"msg":"Starting server","path":"/metrics","kind":"metrics","addr":"[::]:8889"}
+{"level":"info","ts":1753373620.501226,"msg":"Starting server","kind":"health probe","addr":"[::]:8081"}
+{"level":"info","ts":1753373620.5013332,"msg":"Starting EventSource","controller":"imagelist-controller","source":"kind source: *v1.ImageList"}
+{"level":"info","ts":1753373620.5013835,"msg":"Starting EventSource","controller":"imagelist-controller","source":"kind source: *v1.ImageJob"}
+{"level":"info","ts":1753373620.5013912,"msg":"Starting EventSource","controller":"imagelist-controller","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":1753373620.501394,"msg":"Starting EventSource","controller":"imagejob-controller","source":"kind source: *v1.ImageJob"}
+{"level":"info","ts":1753373620.5014038,"msg":"Starting Controller","controller":"imagelist-controller"}
+{"level":"info","ts":1753373620.501407,"msg":"Starting EventSource","controller":"imagejob-controller","source":"kind source: *v1.Pod"}
+{"level":"info","ts":1753373620.501413,"msg":"Starting EventSource","controller":"imagejob-controller","source":"kind source: *v1.PodTemplate"}
+{"level":"info","ts":1753373620.50142,"msg":"Starting Controller","controller":"imagejob-controller"}
+{"level":"info","ts":1753373620.5013897,"msg":"Starting Controller","controller":"imagelist-controller"}
+{"level":"info","ts":1753373620.5014658,"msg":"Starting EventSource","controller":"imagecollector-controller","source":"kind source: *v1.ImageJob"}
+{"level":"info","ts":1753373620.5014825,"msg":"Starting EventSource","controller":"imagecollector-controller","source":"channel source: 0xc0002db220"}
+{"level":"info","ts":1753373620.50149,"msg":"Starting Controller","controller":"imagecollector-controller"}
+{"level":"info","ts":1753373620.602342,"msg":"Starting workers","controller":"imagecollector-controller","worker count":1}
+{"level":"info","ts":1753373620.6026576,"logger":"controller","msg":"ImageCollector Reconcile","process":"imagecollector-controller"}
+{"level":"info","ts":1753373620.6023805,"msg":"Starting workers","controller":"imagejob-controller","worker count":1}
+{"level":"info","ts":1753373620.6023505,"msg":"Starting workers","controller":"imagelist-controller","worker count":1}
+{"level":"info","ts":1753373620.6024792,"msg":"Starting workers","controller":"imagelist-controller","worker count":1}
+{"level":"info","ts":1753373620.614353,"logger":"KubeAPIWarningLogger","msg":"v1alpha1 of the eraser API has been deprecated. Please migrate to v1."}
+{"level":"info","ts":1753373620.6206398,"logger":"controller","msg":"Successfully created collector ImageJob","process":"imagecollector-controller","job":"imagejob-hhjfl"}
+{"level":"info","ts":1753373620.6206548,"logger":"controller","msg":"done reconcile","process":"imagecollector-controller"}
+{"level":"info","ts":1753373620.7394075,"logger":"controller","msg":"Started collector pod on node","process":"imagejob-controller","job":"imagejob-hhjfl","node":"aks-systempool-67290672-vmss000000","nodeName":"aks-systempool-67290672-vmss000000"}
+{"level":"info","ts":1753373620.7535157,"logger":"controller","msg":"Started collector pod on node","process":"imagejob-controller","job":"imagejob-hhjfl","node":"aks-systempool-67290672-vmss000001","nodeName":"aks-systempool-67290672-vmss000001"}
+{"level":"info","ts":1753373620.7685795,"logger":"controller","msg":"Started collector pod on node","process":"imagejob-controller","job":"imagejob-hhjfl","node":"aks-systempool-67290672-vmss000002","nodeName":"aks-systempool-67290672-vmss000002"}
+{"level":"info","ts":1753374051.0114622,"logger":"controller","msg":"ImageCollector Reconcile","process":"imagecollector-controller"}
+{"level":"info","ts":1753374051.011505,"logger":"controller","msg":"completed phase","process":"imagecollector-controller"}
+{"level":"info","ts":1753374051.0168724,"logger":"controller","msg":"done reconcile","process":"imagecollector-controller"}
+{"level":"info","ts":1753374051.0169106,"logger":"controller","msg":"ImageCollector Reconcile","process":"imagecollector-controller"}
+{"level":"info","ts":1753374051.0169337,"logger":"controller","msg":"completed phase","process":"imagecollector-controller"}
+{"level":"info","ts":1753374051.0169392,"logger":"controller","msg":"Delaying imagejob delete","process":"imagecollector-controller","job":"imagejob-hhjfl","deleteAter":"2025-07-24 16:30:51 +0000 UTC"}
+{"level":"info","ts":1753374051.017056,"logger":"controller","msg":"done reconcile","process":"imagecollector-controller"}
+{"level":"info","ts":1753374651.0003138,"logger":"controller","msg":"ImageCollector Reconcile","process":"imagecollector-controller"}
+{"level":"info","ts":1753374651.000357,"logger":"controller","msg":"completed phase","process":"imagecollector-controller"}
+{"level":"info","ts":1753374651.0003614,"logger":"controller","msg":"Deleting imagejob","process":"imagecollector-controller","job":"imagejob-hhjfl"}
+{"level":"info","ts":1753374651.0165322,"logger":"controller","msg":"Deleting pod template","process":"imagecollector-controller","template":"imagejob-hhjfl"}
+{"level":"info","ts":1753374651.0230854,"logger":"controller","msg":"end job deletion","process":"imagecollector-controller"}
+{"level":"info","ts":1753374651.0230973,"logger":"controller","msg":"done reconcile","process":"imagecollector-controller"}
+==== END logs for container manager of pod kube-system/eraser-controller-manager-67b6b4f999-vvclw ====

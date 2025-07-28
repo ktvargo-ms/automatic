@@ -1,0 +1,7 @@
+==== START logs for container provider-azure-installer of pod kube-system/aks-secrets-store-provider-azure-k5rgc ====
+I0724 16:12:34.686994       1 main.go:80] "Starting Azure Key Vault Provider" version="v1.7.0"
+I0724 16:12:34.687071       1 exporter.go:14] "intializing metrics backend" backend="prometheus"
+I0724 16:12:34.687102       1 main.go:105] construct pem chain feature enabled
+I0724 16:12:34.687108       1 main.go:108] write cert and key in separate files feature enabled
+I0724 16:12:34.687397       1 main.go:143] "Listening for connections" address="//provider/azure.sock"
+==== END logs for container provider-azure-installer of pod kube-system/aks-secrets-store-provider-azure-k5rgc ====

@@ -1,0 +1,15 @@
+==== START logs for container keda-operator of pod kube-system/keda-operator-75487c9cb7-mp9hw ====
+2025-07-24T16:13:53Z	INFO	setup	maxprocs: Updating GOMAXPROCS=1: determined from CPU quota
+2025-07-24T16:13:53Z	INFO	setup	Starting manager
+2025-07-24T16:13:53Z	INFO	setup	KEDA Version: main
+2025-07-24T16:13:53Z	INFO	setup	Git Commit: 
+2025-07-24T16:13:53Z	INFO	setup	Go Version: go1.24.1 X:systemcrypto
+2025-07-24T16:13:53Z	INFO	setup	Go OS/Arch: linux/amd64
+2025-07-24T16:13:53Z	INFO	setup	Running on Kubernetes 1.32	{"version": "v1.32.5"}
+2025-07-24T16:13:53Z	INFO	setup	WARNING: KEDA main hasn't been tested on Kubernetes v1.32.5
+2025-07-24T16:13:53Z	INFO	setup	You can check recommended versions on https://keda.sh
+2025-07-24T16:13:53Z	INFO	controller-runtime.metrics	Starting metrics server
+2025-07-24T16:13:53Z	INFO	controller-runtime.metrics	Serving metrics server	{"bindAddress": ":8080", "secure": false}
+2025-07-24T16:13:53Z	INFO	starting server	{"name": "health probe", "addr": "[::]:8081"}
+I0724 16:13:53.941484       1 leaderelection.go:254] attempting to acquire leader lease kube-system/operator.keda.sh...
+==== END logs for container keda-operator of pod kube-system/keda-operator-75487c9cb7-mp9hw ====

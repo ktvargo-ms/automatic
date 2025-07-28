@@ -1,0 +1,36 @@
+==== START logs for container keda-admission-webhooks of pod kube-system/keda-admission-webhooks-6567cd546b-5qnpq ====
+2025-07-24T16:13:56Z	INFO	setup	maxprocs: Updating GOMAXPROCS=1: using minimum allowed GOMAXPROCS
+2025-07-24T16:13:56Z	INFO	setup	Starting admission webhooks
+2025-07-24T16:13:56Z	INFO	setup	KEDA Version: main
+2025-07-24T16:13:56Z	INFO	setup	Git Commit: 
+2025-07-24T16:13:56Z	INFO	setup	Go Version: go1.24.1 X:systemcrypto
+2025-07-24T16:13:56Z	INFO	setup	Go OS/Arch: linux/amd64
+2025-07-24T16:13:56Z	INFO	setup	Running on Kubernetes 1.32	{"version": "v1.32.5"}
+2025-07-24T16:13:56Z	INFO	setup	WARNING: KEDA main hasn't been tested on Kubernetes v1.32.5
+2025-07-24T16:13:56Z	INFO	setup	You can check recommended versions on https://keda.sh
+2025-07-24T16:13:56Z	INFO	controller-runtime.builder	skip registering a mutating webhook, object does not implement admission.Defaulter or WithDefaulter wasn't called	{"GVK": "keda.sh/v1alpha1, Kind=ScaledObject"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.builder	Registering a validating webhook	{"GVK": "keda.sh/v1alpha1, Kind=ScaledObject", "path": "/validate-keda-sh-v1alpha1-scaledobject"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.webhook	Registering webhook	{"path": "/validate-keda-sh-v1alpha1-scaledobject"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.builder	skip registering a mutating webhook, object does not implement admission.Defaulter or WithDefaulter wasn't called	{"GVK": "keda.sh/v1alpha1, Kind=ScaledJob"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.builder	Registering a validating webhook	{"GVK": "keda.sh/v1alpha1, Kind=ScaledJob", "path": "/validate-keda-sh-v1alpha1-scaledjob"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.webhook	Registering webhook	{"path": "/validate-keda-sh-v1alpha1-scaledjob"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.builder	skip registering a mutating webhook, object does not implement admission.Defaulter or WithDefaulter wasn't called	{"GVK": "keda.sh/v1alpha1, Kind=TriggerAuthentication"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.builder	Registering a validating webhook	{"GVK": "keda.sh/v1alpha1, Kind=TriggerAuthentication", "path": "/validate-keda-sh-v1alpha1-triggerauthentication"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.webhook	Registering webhook	{"path": "/validate-keda-sh-v1alpha1-triggerauthentication"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.builder	skip registering a mutating webhook, object does not implement admission.Defaulter or WithDefaulter wasn't called	{"GVK": "keda.sh/v1alpha1, Kind=ClusterTriggerAuthentication"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.builder	Registering a validating webhook	{"GVK": "keda.sh/v1alpha1, Kind=ClusterTriggerAuthentication", "path": "/validate-keda-sh-v1alpha1-clustertriggerauthentication"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.webhook	Registering webhook	{"path": "/validate-keda-sh-v1alpha1-clustertriggerauthentication"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.builder	skip registering a mutating webhook, object does not implement admission.Defaulter or WithDefaulter wasn't called	{"GVK": "eventing.keda.sh/v1alpha1, Kind=CloudEventSource"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.builder	Registering a validating webhook	{"GVK": "eventing.keda.sh/v1alpha1, Kind=CloudEventSource", "path": "/validate-eventing-keda-sh-v1alpha1-cloudeventsource"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.webhook	Registering webhook	{"path": "/validate-eventing-keda-sh-v1alpha1-cloudeventsource"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.builder	skip registering a mutating webhook, object does not implement admission.Defaulter or WithDefaulter wasn't called	{"GVK": "eventing.keda.sh/v1alpha1, Kind=ClusterCloudEventSource"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.builder	Registering a validating webhook	{"GVK": "eventing.keda.sh/v1alpha1, Kind=ClusterCloudEventSource", "path": "/validate-eventing-keda-sh-v1alpha1-clustercloudeventsource"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.webhook	Registering webhook	{"path": "/validate-eventing-keda-sh-v1alpha1-clustercloudeventsource"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.metrics	Starting metrics server
+2025-07-24T16:13:56Z	INFO	controller-runtime.metrics	Serving metrics server	{"bindAddress": ":8080", "secure": false}
+2025-07-24T16:13:56Z	INFO	starting server	{"name": "health probe", "addr": "[::]:8081"}
+2025-07-24T16:13:56Z	INFO	controller-runtime.webhook	Starting webhook server
+2025-07-24T16:13:56Z	INFO	controller-runtime.certwatcher	Updated current TLS certificate
+2025-07-24T16:13:56Z	INFO	controller-runtime.webhook	Serving webhook server	{"host": "", "port": 9443}
+2025-07-24T16:13:56Z	INFO	controller-runtime.certwatcher	Starting certificate watcher
+==== END logs for container keda-admission-webhooks of pod kube-system/keda-admission-webhooks-6567cd546b-5qnpq ====

@@ -1,0 +1,75 @@
+==== START logs for container liveness-probe of pod kube-system/csi-azuredisk-node-v629w ====
+I0724 16:12:32.645724       1 main.go:135] "Calling CSI driver to discover driver name"
+I0724 16:12:32.648865       1 main.go:143] "CSI driver name" driver="disk.csi.azure.com"
+I0724 16:12:32.648968       1 main.go:172] "ServeMux listening" address="0.0.0.0:29603"
+==== END logs for container liveness-probe of pod kube-system/csi-azuredisk-node-v629w ====
+==== START logs for container node-driver-registrar of pod kube-system/csi-azuredisk-node-v629w ====
+I0724 16:12:29.082971       1 main.go:150] "Version" version="v2.13.0-0-g9b41324b"
+I0724 16:12:29.083089       1 main.go:151] "Running node-driver-registrar" mode=""
+I0724 16:12:29.083095       1 main.go:172] "Attempting to open a gRPC connection" csiAddress="/csi/csi.sock"
+I0724 16:12:33.136332       1 main.go:180] "Calling CSI driver to discover driver name"
+I0724 16:12:33.137646       1 main.go:189] "CSI driver name" csiDriverName="disk.csi.azure.com"
+I0724 16:12:33.137682       1 node_register.go:56] "Starting Registration Server" socketPath="/registration/disk.csi.azure.com-reg.sock"
+I0724 16:12:33.137834       1 node_register.go:66] "Registration Server started" socketPath="/registration/disk.csi.azure.com-reg.sock"
+I0724 16:12:33.137919       1 node_register.go:96] "Skipping HTTP server"
+I0724 16:12:33.977751       1 main.go:96] "Received GetInfo call" request="&InfoRequest{}"
+I0724 16:12:34.006899       1 main.go:108] "Received NotifyRegistrationStatus call" status="&RegistrationStatus{PluginRegistered:true,Error:,}"
+==== END logs for container node-driver-registrar of pod kube-system/csi-azuredisk-node-v629w ====
+==== START logs for container azuredisk of pod kube-system/csi-azuredisk-node-v629w ====
+I0724 16:12:32.486677       1 main.go:87] Sys info: NumCPU: 4 MAXPROC: 2
+I0724 16:12:32.486753       1 azuredisk.go:225] driver userAgent: disk.csi.azure.com/v1.32.7
+W0724 16:12:32.486768       1 client_config.go:667] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+I0724 16:12:32.487094       1 azure_disk_utils.go:155] reading cloud config from secret kube-system/azure-cloud-provider
+I0724 16:12:32.533990       1 azure_disk_utils.go:165] InitializeCloudFromSecret: failed to get cloud config from secret kube-system/azure-cloud-provider: secrets "azure-cloud-provider" is forbidden: User "system:serviceaccount:kube-system:csi-azuredisk-node-sa" cannot get resource "secrets" in API group "" in the namespace "kube-system": Azure does not have opinion for this user.
+I0724 16:12:32.534010       1 azure_disk_utils.go:174] could not read cloud config from secret kube-system/azure-cloud-provider
+I0724 16:12:32.534017       1 azure_disk_utils.go:177] AZURE_CREDENTIAL_FILE env var set as /etc/kubernetes/azure.json
+I0724 16:12:32.535040       1 azure.go:607] Azure cloudprovider using try backoff: retries=6, exponent=1.500000, duration=5, jitter=1.000000
+I0724 16:12:32.535875       1 azure.go:421] "Setting up ARM client factory for network resources" subscriptionID="eaef3242-e7b0-4641-810e-5d0fcc149659"
+I0724 16:12:32.536338       1 azure.go:429] "Setting up ARM client factory for compute resources" subscriptionID="eaef3242-e7b0-4641-810e-5d0fcc149659"
+I0724 16:12:32.536380       1 skus.go:121] NewNodeInfo: Starting to populate node and disk sku information.
+I0724 16:12:32.551275       1 azure_instance_metadata.go:171] Warning: failed to get loadbalancer metadata: failure of getting loadbalancer metadata with response "404 Not Found"
+I0724 16:12:32.552583       1 mount_linux.go:334] Detected umount with safe 'not mounted' behavior
+I0724 16:12:32.552886       1 driver.go:82] Enabling controller service capability: CREATE_DELETE_VOLUME
+I0724 16:12:32.552895       1 driver.go:82] Enabling controller service capability: PUBLISH_UNPUBLISH_VOLUME
+I0724 16:12:32.552898       1 driver.go:82] Enabling controller service capability: CREATE_DELETE_SNAPSHOT
+I0724 16:12:32.552900       1 driver.go:82] Enabling controller service capability: CLONE_VOLUME
+I0724 16:12:32.552901       1 driver.go:82] Enabling controller service capability: EXPAND_VOLUME
+I0724 16:12:32.552903       1 driver.go:82] Enabling controller service capability: SINGLE_NODE_MULTI_WRITER
+I0724 16:12:32.552905       1 driver.go:82] Enabling controller service capability: MODIFY_VOLUME
+I0724 16:12:32.552910       1 driver.go:101] Enabling volume access mode: SINGLE_NODE_WRITER
+I0724 16:12:32.552913       1 driver.go:101] Enabling volume access mode: SINGLE_NODE_READER_ONLY
+I0724 16:12:32.552915       1 driver.go:101] Enabling volume access mode: SINGLE_NODE_SINGLE_WRITER
+I0724 16:12:32.552917       1 driver.go:101] Enabling volume access mode: SINGLE_NODE_MULTI_WRITER
+I0724 16:12:32.552942       1 driver.go:92] Enabling node service capability: STAGE_UNSTAGE_VOLUME
+I0724 16:12:32.552951       1 driver.go:92] Enabling node service capability: EXPAND_VOLUME
+I0724 16:12:32.552954       1 driver.go:92] Enabling node service capability: GET_VOLUME_STATS
+I0724 16:12:32.552957       1 driver.go:92] Enabling node service capability: SINGLE_NODE_MULTI_WRITER
+I0724 16:12:32.553092       1 azuredisk.go:339] 
+DRIVER INFORMATION:
+-------------------
+Build Date: "2025-05-28T02:58:53Z"
+Compiler: gc
+Driver Name: disk.csi.azure.com
+Driver Version: v1.32.7
+Git Commit: 9a61790ee5f009c562f66553ac97552674f0e9dd
+Go Version: go1.24.2
+Platform: linux/amd64
+Topology Key: topology.disk.csi.azure.com/zone
+
+Streaming logs below:
+I0724 16:12:32.646565       1 utils.go:105] GRPC call: /csi.v1.Identity/GetPluginInfo
+I0724 16:12:32.646582       1 utils.go:106] GRPC request: {}
+I0724 16:12:32.647537       1 utils.go:112] GRPC response: {"name":"disk.csi.azure.com","vendor_version":"v1.32.7"}
+I0724 16:12:33.136934       1 utils.go:105] GRPC call: /csi.v1.Identity/GetPluginInfo
+I0724 16:12:33.136953       1 utils.go:106] GRPC request: {}
+I0724 16:12:33.136980       1 utils.go:112] GRPC response: {"name":"disk.csi.azure.com","vendor_version":"v1.32.7"}
+I0724 16:12:33.979547       1 utils.go:105] GRPC call: /csi.v1.Node/NodeGetInfo
+I0724 16:12:33.979564       1 utils.go:106] GRPC request: {}
+I0724 16:12:33.979605       1 nodeserver.go:370] NodeGetInfo, nodeName: aks-systempool-67290672-vmss000000, failureDomain: westus3-1
+I0724 16:12:33.979619       1 nodeserver.go:456] got a matching size in getMaxDataDiskCount, VM Size: STANDARD_D4LDS_V5, MaxDataDiskCount: 8
+I0724 16:12:33.979628       1 utils.go:112] GRPC response: {"accessible_topology":{"segments":{"topology.disk.csi.azure.com/zone":"westus3-1","topology.kubernetes.io/zone":"westus3-1"}},"max_volumes_per_node":8,"node_id":"aks-systempool-67290672-vmss000000"}
+I0724 16:13:02.563172       1 azuredisk.go:764] CSINode Allocatable value is set for driver on node aks-systempool-67290672-vmss000000, count 8
+I0724 16:13:02.563198       1 azuredisk.go:713] removing taint with key disk.csi.azure.com/agent-not-ready from local node aks-systempool-67290672-vmss000000
+I0724 16:13:02.563205       1 azuredisk.go:716] checking taint key CriticalAddonsOnly, value true, effect NoSchedule
+I0724 16:13:02.563215       1 azuredisk.go:725] No taints to remove on node, skipping taint removal
+==== END logs for container azuredisk of pod kube-system/csi-azuredisk-node-v629w ====

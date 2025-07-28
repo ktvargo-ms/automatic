@@ -1,0 +1,61 @@
+==== START logs for container keda-operator-metrics-apiserver of pod kube-system/keda-operator-metrics-apiserver-6b7c5864b9-pjxjq ====
+I0724 16:13:54.876111       1 welcome.go:34] "msg"="Starting metrics server" "logger"="keda_metrics_adapter"
+I0724 16:13:54.876215       1 welcome.go:35] "msg"="KEDA Version: main" "logger"="keda_metrics_adapter"
+I0724 16:13:54.876221       1 welcome.go:36] "msg"="Git Commit: " "logger"="keda_metrics_adapter"
+I0724 16:13:54.876322       1 welcome.go:37] "msg"="Go Version: go1.24.1 X:systemcrypto" "logger"="keda_metrics_adapter"
+I0724 16:13:54.876334       1 welcome.go:38] "msg"="Go OS/Arch: linux/amd64" "logger"="keda_metrics_adapter"
+I0724 16:13:54.876350       1 welcome.go:39] "msg"="Running on Kubernetes 1.32" "logger"="keda_metrics_adapter" "version"={"major":"1","minor":"32","gitVersion":"v1.32.5","gitCommit":"9894294ef13a5b32803e3ca2c0d620a088cc84d1","gitTreeState":"clean","buildDate":"2025-05-21T16:17:25Z","goVersion":"go1.23.8","compiler":"gc","platform":"linux/amd64"}
+I0724 16:13:54.876374       1 welcome.go:43] "msg"="WARNING: KEDA main hasn't been tested on Kubernetes v1.32.5" "logger"="keda_metrics_adapter"
+I0724 16:13:54.876380       1 welcome.go:44] "msg"="You can check recommended versions on https://keda.sh" "logger"="keda_metrics_adapter"
+I0724 16:13:54.876748       1 maxprocs.go:31] "msg"="maxprocs: Updating GOMAXPROCS=1: determined from CPU quota" "logger"="keda_metrics_adapter"
+I0724 16:13:54.877546       1 main.go:111] "msg"="Connecting Metrics Service gRPC client to the server" "address"="keda-operator.kube-system.svc.cluster.local:9666" "logger"="keda_metrics_adapter"
+I0724 16:13:54.897150       1 provider.go:56] "msg"="starting" "logger"="keda_metrics_adapter.provider"
+I0724 16:13:54.897167       1 main.go:272] "msg"="starting adapter..." "logger"="keda_metrics_adapter"
+I0724 16:13:54.902573       1 client.go:103] "msg"="Waiting for establishing a gRPC connection to KEDA Metrics Server" "logger"="keda_metrics_adapter.provider"
+I0724 16:13:54.902635       1 main.go:184] "msg"="starting /metrics server endpoint" "logger"="keda_metrics_adapter"
+W0724 16:13:54.941797       1 logging.go:55] [core] [Channel #1 SubChannel #2]grpc: addrConn.createTransport failed to connect to {Addr: "10.0.165.174:9666", ServerName: "keda-operator.kube-system.svc.cluster.local:9666", }. Err: connection error: desc = "transport: Error while dialing: dial tcp 10.0.165.174:9666: connect: connection refused"
+I0724 16:13:55.106073       1 secure_serving.go:213] Serving securely on [::]:6443
+I0724 16:13:55.106129       1 requestheader_controller.go:172] Starting RequestHeaderAuthRequestController
+I0724 16:13:55.106144       1 shared_informer.go:313] Waiting for caches to sync for RequestHeaderAuthRequestController
+I0724 16:13:55.106179       1 dynamic_serving_content.go:135] "Starting controller" name="serving-cert::/certs/tls.crt::/certs/tls.key"
+I0724 16:13:55.106287       1 tlsconfig.go:243] "Starting DynamicServingCertificateController"
+I0724 16:13:55.106378       1 dynamic_cafile_content.go:160] "Starting controller" name="client-ca-bundle::/certs/ca.crt"
+I0724 16:13:55.106460       1 configmap_cafile_content.go:205] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file"
+I0724 16:13:55.106470       1 shared_informer.go:313] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I0724 16:13:55.206279       1 shared_informer.go:320] Caches are synced for RequestHeaderAuthRequestController
+I0724 16:13:55.207526       1 shared_informer.go:320] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+W0724 16:13:55.942880       1 logging.go:55] [core] [Channel #1 SubChannel #2]grpc: addrConn.createTransport failed to connect to {Addr: "10.0.165.174:9666", ServerName: "keda-operator.kube-system.svc.cluster.local:9666", }. Err: connection error: desc = "transport: Error while dialing: dial tcp 10.0.165.174:9666: connect: connection refused"
+W0724 16:13:57.579997       1 logging.go:55] [core] [Channel #1 SubChannel #2]grpc: addrConn.createTransport failed to connect to {Addr: "10.0.165.174:9666", ServerName: "keda-operator.kube-system.svc.cluster.local:9666", }. Err: connection error: desc = "transport: Error while dialing: dial tcp 10.0.165.174:9666: connect: connection refused"
+W0724 16:14:00.340702       1 logging.go:55] [core] [Channel #1 SubChannel #2]grpc: addrConn.createTransport failed to connect to {Addr: "10.0.165.174:9666", ServerName: "keda-operator.kube-system.svc.cluster.local:9666", }. Err: connection error: desc = "transport: Error while dialing: dial tcp 10.0.165.174:9666: connect: connection refused"
+W0724 16:14:04.998166       1 logging.go:55] [core] [Channel #1 SubChannel #2]grpc: addrConn.createTransport failed to connect to {Addr: "10.0.165.174:9666", ServerName: "keda-operator.kube-system.svc.cluster.local:9666", }. Err: connection error: desc = "transport: Error while dialing: dial tcp 10.0.165.174:9666: connect: connection refused"
+W0724 16:14:11.882371       1 logging.go:55] [core] [Channel #1 SubChannel #2]grpc: addrConn.createTransport failed to connect to {Addr: "10.0.165.174:9666", ServerName: "keda-operator.kube-system.svc.cluster.local:9666", }. Err: connection error: desc = "transport: Error while dialing: dial tcp 10.0.165.174:9666: connect: connection refused"
+I0724 16:14:21.442918       1 provider.go:64] "msg"="Connection to KEDA Metrics Service gRPC server has been successfully established" "logger"="keda_metrics_adapter.provider" "server"="keda-operator.kube-system.svc.cluster.local:9666"
+E0724 16:18:24.911571       1 writers.go:122] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0724 16:18:24.911856       1 writers.go:122] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0724 16:18:24.912047       1 writers.go:122] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0724 16:18:24.912610       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0724 16:18:24.914468       1 writers.go:135] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0724 16:18:24.915528       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="4.372816ms" method="GET" path="/apis/external.metrics.k8s.io/v1beta1" result=null
+E0724 16:18:24.924305       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0724 16:18:24.924330       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0724 16:18:24.925355       1 writers.go:135] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0724 16:18:24.925390       1 writers.go:135] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0724 16:18:24.926389       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="15.1906ms" method="GET" path="/apis/external.metrics.k8s.io/v1beta1" result=null
+E0724 16:18:24.926412       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="15.167821ms" method="GET" path="/apis/external.metrics.k8s.io/v1beta1" result=null
+E0724 16:19:07.819129       1 writers.go:122] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0724 16:19:07.819451       1 writers.go:122] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0724 16:19:07.819693       1 writers.go:122] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0724 16:19:07.820379       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0724 16:19:07.822092       1 writers.go:135] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0724 16:19:07.822218       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0724 16:19:07.822238       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0724 16:19:07.824091       1 writers.go:135] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0724 16:19:07.824123       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="5.541376ms" method="GET" path="/apis/external.metrics.k8s.io/v1beta1" result=null
+E0724 16:19:07.824148       1 writers.go:135] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0724 16:19:07.826008       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="7.384667ms" method="GET" path="/apis/external.metrics.k8s.io/v1beta1" result=null
+E0724 16:19:07.826036       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="7.383457ms" method="GET" path="/apis/external.metrics.k8s.io/v1beta1" result=null
+E0724 16:19:09.727130       1 writers.go:122] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0724 16:19:09.728871       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0724 16:19:09.730003       1 writers.go:135] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0724 16:19:09.731097       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="4.414252ms" method="GET" path="/apis/external.metrics.k8s.io/v1beta1" result=null
+==== END logs for container keda-operator-metrics-apiserver of pod kube-system/keda-operator-metrics-apiserver-6b7c5864b9-pjxjq ====

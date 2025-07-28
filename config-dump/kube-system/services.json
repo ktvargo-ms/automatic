@@ -1,0 +1,547 @@
+{
+    "kind": "ServiceList",
+    "apiVersion": "v1",
+    "metadata": {
+        "resourceVersion": "47012"
+    },
+    "items": [
+        {
+            "metadata": {
+                "name": "ama-metrics-ksm",
+                "namespace": "kube-system",
+                "uid": "73089afd-119b-4881-999d-601290088125",
+                "resourceVersion": "4726",
+                "creationTimestamp": "2025-07-24T16:17:28Z",
+                "labels": {
+                    "app.kubernetes.io/component": "ama-metrics",
+                    "app.kubernetes.io/managed-by": "Helm",
+                    "app.kubernetes.io/name": "ama-metrics-ksm",
+                    "app.kubernetes.io/part-of": "ama-metrics-ksm",
+                    "app.kubernetes.io/version": "2.15.0-4",
+                    "helm.sh/chart": "azure-monitor-metrics-addon-0.1.0",
+                    "helm.toolkit.fluxcd.io/name": "azure-monitor-metrics-adapter-helmrelease",
+                    "helm.toolkit.fluxcd.io/namespace": "68825a6e37cc46000195d01a"
+                },
+                "annotations": {
+                    "meta.helm.sh/release-name": "aks-managed-azure-monitor-metrics",
+                    "meta.helm.sh/release-namespace": "kube-system",
+                    "prometheus.io/scrape": "true"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "http",
+                        "protocol": "TCP",
+                        "port": 8080,
+                        "targetPort": 8080
+                    }
+                ],
+                "selector": {
+                    "app.kubernetes.io/name": "ama-metrics-ksm"
+                },
+                "clusterIP": "10.0.29.115",
+                "clusterIPs": [
+                    "10.0.29.115"
+                ],
+                "type": "ClusterIP",
+                "sessionAffinity": "None",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "internalTrafficPolicy": "Cluster"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "metadata": {
+                "name": "ama-metrics-operator-targets",
+                "namespace": "kube-system",
+                "uid": "eebd05ee-9315-482b-baa4-d3ee2ae2e463",
+                "resourceVersion": "4728",
+                "creationTimestamp": "2025-07-24T16:17:28Z",
+                "labels": {
+                    "app.kubernetes.io/managed-by": "Helm",
+                    "component": "ama-metrics-operator-targets",
+                    "helm.toolkit.fluxcd.io/name": "azure-monitor-metrics-adapter-helmrelease",
+                    "helm.toolkit.fluxcd.io/namespace": "68825a6e37cc46000195d01a",
+                    "kubernetes.azure.com/managedby": "aks"
+                },
+                "annotations": {
+                    "meta.helm.sh/release-name": "aks-managed-azure-monitor-metrics",
+                    "meta.helm.sh/release-namespace": "kube-system"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "targetallocation",
+                        "protocol": "TCP",
+                        "port": 80,
+                        "targetPort": 8080
+                    }
+                ],
+                "selector": {
+                    "rsName": "ama-metrics-operator-targets"
+                },
+                "clusterIP": "10.0.24.127",
+                "clusterIPs": [
+                    "10.0.24.127"
+                ],
+                "type": "ClusterIP",
+                "sessionAffinity": "None",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "internalTrafficPolicy": "Cluster"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "metadata": {
+                "name": "azure-policy-webhook-service",
+                "namespace": "kube-system",
+                "uid": "376ff365-886f-4157-b185-b8ce4354a67d",
+                "resourceVersion": "697",
+                "creationTimestamp": "2025-07-24T16:11:26Z",
+                "labels": {
+                    "addonmanager.kubernetes.io/mode": "Reconcile"
+                },
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"labels\":{\"addonmanager.kubernetes.io/mode\":\"Reconcile\"},\"name\":\"azure-policy-webhook-service\",\"namespace\":\"kube-system\"},\"spec\":{\"ports\":[{\"name\":\"webhook\",\"port\":443,\"targetPort\":9449}],\"selector\":{\"app\":\"azure-policy-webhook\"}}}\n"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "webhook",
+                        "protocol": "TCP",
+                        "port": 443,
+                        "targetPort": 9449
+                    }
+                ],
+                "selector": {
+                    "app": "azure-policy-webhook"
+                },
+                "clusterIP": "10.0.65.196",
+                "clusterIPs": [
+                    "10.0.65.196"
+                ],
+                "type": "ClusterIP",
+                "sessionAffinity": "None",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "internalTrafficPolicy": "Cluster"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "metadata": {
+                "name": "azure-wi-webhook-webhook-service",
+                "namespace": "kube-system",
+                "uid": "680c04e8-59a6-4b54-85e4-fb06729c14d0",
+                "resourceVersion": "1596",
+                "creationTimestamp": "2025-07-24T16:12:56Z",
+                "labels": {
+                    "app.kubernetes.io/managed-by": "Helm",
+                    "azure-workload-identity.io/system": "true",
+                    "helm.toolkit.fluxcd.io/name": "workload-identity-adapter-helmrelease",
+                    "helm.toolkit.fluxcd.io/namespace": "68825a6e37cc46000195d01a",
+                    "kubernetes.azure.com/managedby": "aks"
+                },
+                "annotations": {
+                    "meta.helm.sh/release-name": "aks-managed-workload-identity",
+                    "meta.helm.sh/release-namespace": "kube-system"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "protocol": "TCP",
+                        "port": 443,
+                        "targetPort": 9443
+                    }
+                ],
+                "selector": {
+                    "azure-workload-identity.io/system": "true",
+                    "kubernetes.azure.com/managedby": "aks"
+                },
+                "clusterIP": "10.0.31.17",
+                "clusterIPs": [
+                    "10.0.31.17"
+                ],
+                "type": "ClusterIP",
+                "sessionAffinity": "None",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "internalTrafficPolicy": "Cluster"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "metadata": {
+                "name": "keda-admission-webhooks",
+                "namespace": "kube-system",
+                "uid": "70affaf5-4604-4590-88a6-916c51c1342c",
+                "resourceVersion": "1722",
+                "creationTimestamp": "2025-07-24T16:13:03Z",
+                "labels": {
+                    "app.kubernetes.io/component": "operator",
+                    "app.kubernetes.io/managed-by": "Helm",
+                    "app.kubernetes.io/name": "keda-admission-webhooks",
+                    "app.kubernetes.io/part-of": "keda-operator",
+                    "app.kubernetes.io/version": "2.16.1",
+                    "helm.toolkit.fluxcd.io/name": "keda-adapter-helmrelease",
+                    "helm.toolkit.fluxcd.io/namespace": "68825a6e37cc46000195d01a",
+                    "kubernetes.azure.com/managedby": "aks"
+                },
+                "annotations": {
+                    "meta.helm.sh/release-name": "aks-managed-keda",
+                    "meta.helm.sh/release-namespace": "kube-system"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "https",
+                        "protocol": "TCP",
+                        "appProtocol": "https",
+                        "port": 443,
+                        "targetPort": 9443
+                    },
+                    {
+                        "name": "metrics",
+                        "protocol": "TCP",
+                        "port": 8080,
+                        "targetPort": 8080
+                    }
+                ],
+                "selector": {
+                    "app": "keda-admission-webhooks"
+                },
+                "clusterIP": "10.0.17.21",
+                "clusterIPs": [
+                    "10.0.17.21"
+                ],
+                "type": "ClusterIP",
+                "sessionAffinity": "None",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "internalTrafficPolicy": "Cluster"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "metadata": {
+                "name": "keda-operator",
+                "namespace": "kube-system",
+                "uid": "6eee6a22-f9c9-4e19-bcd2-d869de62159b",
+                "resourceVersion": "1727",
+                "creationTimestamp": "2025-07-24T16:13:03Z",
+                "labels": {
+                    "app.kubernetes.io/component": "operator",
+                    "app.kubernetes.io/managed-by": "Helm",
+                    "app.kubernetes.io/name": "keda-operator",
+                    "app.kubernetes.io/part-of": "keda-operator",
+                    "app.kubernetes.io/version": "2.16.1",
+                    "helm.toolkit.fluxcd.io/name": "keda-adapter-helmrelease",
+                    "helm.toolkit.fluxcd.io/namespace": "68825a6e37cc46000195d01a",
+                    "kubernetes.azure.com/managedby": "aks"
+                },
+                "annotations": {
+                    "meta.helm.sh/release-name": "aks-managed-keda",
+                    "meta.helm.sh/release-namespace": "kube-system"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "metricsservice",
+                        "protocol": "TCP",
+                        "port": 9666,
+                        "targetPort": 9666
+                    },
+                    {
+                        "name": "metrics",
+                        "protocol": "TCP",
+                        "port": 8080,
+                        "targetPort": 8080
+                    }
+                ],
+                "selector": {
+                    "app": "keda-operator"
+                },
+                "clusterIP": "10.0.165.174",
+                "clusterIPs": [
+                    "10.0.165.174"
+                ],
+                "type": "ClusterIP",
+                "sessionAffinity": "None",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "internalTrafficPolicy": "Cluster"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "metadata": {
+                "name": "keda-operator-metrics-apiserver",
+                "namespace": "kube-system",
+                "uid": "1e0237ba-81a8-4842-83ca-b72397e93844",
+                "resourceVersion": "1720",
+                "creationTimestamp": "2025-07-24T16:13:03Z",
+                "labels": {
+                    "app": "keda-operator-metrics-apiserver",
+                    "app.kubernetes.io/component": "operator",
+                    "app.kubernetes.io/managed-by": "Helm",
+                    "app.kubernetes.io/name": "keda-operator-metrics-apiserver",
+                    "app.kubernetes.io/part-of": "keda-operator",
+                    "app.kubernetes.io/version": "2.16.1",
+                    "helm.toolkit.fluxcd.io/name": "keda-adapter-helmrelease",
+                    "helm.toolkit.fluxcd.io/namespace": "68825a6e37cc46000195d01a",
+                    "kubernetes.azure.com/managedby": "aks"
+                },
+                "annotations": {
+                    "meta.helm.sh/release-name": "aks-managed-keda",
+                    "meta.helm.sh/release-namespace": "kube-system"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "https",
+                        "protocol": "TCP",
+                        "appProtocol": "https",
+                        "port": 443,
+                        "targetPort": 6443
+                    },
+                    {
+                        "name": "metrics",
+                        "protocol": "TCP",
+                        "port": 8080,
+                        "targetPort": 8080
+                    }
+                ],
+                "selector": {
+                    "app": "keda-operator-metrics-apiserver"
+                },
+                "clusterIP": "10.0.63.80",
+                "clusterIPs": [
+                    "10.0.63.80"
+                ],
+                "type": "ClusterIP",
+                "sessionAffinity": "None",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "internalTrafficPolicy": "Cluster"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "metadata": {
+                "name": "kube-dns",
+                "namespace": "kube-system",
+                "uid": "0154c8c1-c7fe-40cf-8e77-a511e62176d7",
+                "resourceVersion": "516",
+                "creationTimestamp": "2025-07-24T16:11:24Z",
+                "labels": {
+                    "addonmanager.kubernetes.io/mode": "Reconcile",
+                    "k8s-app": "kube-dns",
+                    "kubernetes.io/cluster-service": "true",
+                    "kubernetes.io/name": "CoreDNS"
+                },
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"labels\":{\"addonmanager.kubernetes.io/mode\":\"Reconcile\",\"k8s-app\":\"kube-dns\",\"kubernetes.io/cluster-service\":\"true\",\"kubernetes.io/name\":\"CoreDNS\"},\"name\":\"kube-dns\",\"namespace\":\"kube-system\"},\"spec\":{\"clusterIP\":\"10.0.0.10\",\"ports\":[{\"name\":\"dns\",\"port\":53,\"protocol\":\"UDP\"},{\"name\":\"dns-tcp\",\"port\":53,\"protocol\":\"TCP\"}],\"selector\":{\"k8s-app\":\"kube-dns\"}}}\n"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "dns",
+                        "protocol": "UDP",
+                        "port": 53,
+                        "targetPort": 53
+                    },
+                    {
+                        "name": "dns-tcp",
+                        "protocol": "TCP",
+                        "port": 53,
+                        "targetPort": 53
+                    }
+                ],
+                "selector": {
+                    "k8s-app": "kube-dns"
+                },
+                "clusterIP": "10.0.0.10",
+                "clusterIPs": [
+                    "10.0.0.10"
+                ],
+                "type": "ClusterIP",
+                "sessionAffinity": "None",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "internalTrafficPolicy": "Cluster"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "metadata": {
+                "name": "metrics-server",
+                "namespace": "kube-system",
+                "uid": "b610a4b5-050a-4d84-8994-852f7f050890",
+                "resourceVersion": "589",
+                "creationTimestamp": "2025-07-24T16:11:24Z",
+                "labels": {
+                    "addonmanager.kubernetes.io/mode": "Reconcile",
+                    "kubernetes.io/cluster-service": "true",
+                    "kubernetes.io/name": "Metrics-server"
+                },
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"labels\":{\"addonmanager.kubernetes.io/mode\":\"Reconcile\",\"kubernetes.io/cluster-service\":\"true\",\"kubernetes.io/name\":\"Metrics-server\"},\"name\":\"metrics-server\",\"namespace\":\"kube-system\"},\"spec\":{\"ports\":[{\"port\":443,\"protocol\":\"TCP\",\"targetPort\":\"ms-https\"}],\"selector\":{\"k8s-app\":\"metrics-server\"}}}\n"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "protocol": "TCP",
+                        "port": 443,
+                        "targetPort": "ms-https"
+                    }
+                ],
+                "selector": {
+                    "k8s-app": "metrics-server"
+                },
+                "clusterIP": "10.0.8.218",
+                "clusterIPs": [
+                    "10.0.8.218"
+                ],
+                "type": "ClusterIP",
+                "sessionAffinity": "None",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "internalTrafficPolicy": "Cluster"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "metadata": {
+                "name": "network-observability",
+                "namespace": "kube-system",
+                "uid": "63fca952-a6a6-4073-92e0-186d66acd3b6",
+                "resourceVersion": "6526",
+                "creationTimestamp": "2025-07-24T16:17:49Z",
+                "labels": {
+                    "app.kubernetes.io/managed-by": "Helm",
+                    "helm.toolkit.fluxcd.io/name": "kappie-adapter-helmrelease",
+                    "helm.toolkit.fluxcd.io/namespace": "68825a6e37cc46000195d01a"
+                },
+                "annotations": {
+                    "meta.helm.sh/release-name": "aks-managed-kappie",
+                    "meta.helm.sh/release-namespace": "kube-system"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "cilium",
+                        "protocol": "TCP",
+                        "port": 9962,
+                        "targetPort": 9962
+                    }
+                ],
+                "clusterIP": "10.0.197.147",
+                "clusterIPs": [
+                    "10.0.197.147"
+                ],
+                "type": "ClusterIP",
+                "sessionAffinity": "None",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "internalTrafficPolicy": "Cluster"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "metadata": {
+                "name": "vpa-webhook",
+                "namespace": "kube-system",
+                "uid": "7372377b-6420-4c10-b66d-6d9ff896f378",
+                "resourceVersion": "2619",
+                "creationTimestamp": "2025-07-24T16:13:53Z",
+                "labels": {
+                    "app.kubernetes.io/managed-by": "Helm",
+                    "helm.toolkit.fluxcd.io/name": "overlay-vpa-adapter-helmrelease",
+                    "helm.toolkit.fluxcd.io/namespace": "68825a6e37cc46000195d01a"
+                },
+                "annotations": {
+                    "meta.helm.sh/release-name": "overlay-vpa",
+                    "meta.helm.sh/release-namespace": "kube-system"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "protocol": "TCP",
+                        "port": 443,
+                        "targetPort": 8000
+                    }
+                ],
+                "selector": {
+                    "app": "vpa-admission-controller"
+                },
+                "clusterIP": "10.0.30.48",
+                "clusterIPs": [
+                    "10.0.30.48"
+                ],
+                "type": "ClusterIP",
+                "sessionAffinity": "None",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "internalTrafficPolicy": "Cluster"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        }
+    ]
+}

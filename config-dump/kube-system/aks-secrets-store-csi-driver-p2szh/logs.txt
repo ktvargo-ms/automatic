@@ -1,0 +1,25 @@
+==== START logs for container node-driver-registrar of pod kube-system/aks-secrets-store-csi-driver-p2szh ====
+I0724 16:13:35.150134       1 main.go:150] "Version" version="v2.11.1-0-gd03f8209"
+I0724 16:13:35.150264       1 main.go:151] "Running node-driver-registrar" mode=""
+I0724 16:13:35.150603       1 main.go:172] "Attempting to open a gRPC connection" csiAddress="/csi/csi.sock"
+I0724 16:13:38.425055       1 main.go:180] "Calling CSI driver to discover driver name"
+I0724 16:13:38.431245       1 main.go:189] "CSI driver name" csiDriverName="secrets-store.csi.k8s.io"
+I0724 16:13:38.431316       1 node_register.go:56] "Starting Registration Server" socketPath="/registration/secrets-store.csi.k8s.io-reg.sock"
+I0724 16:13:38.431574       1 node_register.go:66] "Registration Server started" socketPath="/registration/secrets-store.csi.k8s.io-reg.sock"
+I0724 16:13:38.431748       1 node_register.go:96] "Skipping HTTP server"
+I0724 16:13:39.223794       1 main.go:96] "Received GetInfo call" request="&InfoRequest{}"
+I0724 16:13:39.252372       1 main.go:108] "Received NotifyRegistrationStatus call" status="&RegistrationStatus{PluginRegistered:true,Error:,}"
+==== END logs for container node-driver-registrar of pod kube-system/aks-secrets-store-csi-driver-p2szh ====
+==== START logs for container secrets-store of pod kube-system/aks-secrets-store-csi-driver-p2szh ====
+I0724 16:13:37.766773       1 exporter.go:35] "initializing metrics backend" backend="prometheus"
+I0724 16:13:37.964313       1 main.go:195] "starting manager\n"
+I0724 16:13:38.066501       1 secrets-store.go:46] "Initializing Secrets Store CSI Driver" driver="secrets-store.csi.k8s.io" version="1.5.0" buildTime="2025-04-14-19:33"
+I0724 16:13:38.066849       1 reconciler.go:143] "starting rotation reconciler" rotationPollInterval="2m0s"
+I0724 16:13:38.068382       1 server.go:126] "Listening for connections" address="//csi/csi.sock"
+I0724 16:13:39.225299       1 nodeserver.go:359] "node: getting default node info\n"
+==== END logs for container secrets-store of pod kube-system/aks-secrets-store-csi-driver-p2szh ====
+==== START logs for container liveness-probe of pod kube-system/aks-secrets-store-csi-driver-p2szh ====
+I0724 16:13:39.906926       1 main.go:135] "Calling CSI driver to discover driver name"
+I0724 16:13:39.909728       1 main.go:143] "CSI driver name" driver="secrets-store.csi.k8s.io"
+I0724 16:13:39.909768       1 main.go:172] "ServeMux listening" address="0.0.0.0:9808"
+==== END logs for container liveness-probe of pod kube-system/aks-secrets-store-csi-driver-p2szh ====

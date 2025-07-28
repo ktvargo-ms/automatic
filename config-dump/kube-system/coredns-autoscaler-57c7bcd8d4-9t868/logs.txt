@@ -1,0 +1,11 @@
+==== START logs for container autoscaler of pod kube-system/coredns-autoscaler-57c7bcd8d4-9t868 ====
+I0724 16:13:33.713801       1 autoscaler.go:49] Scaling Namespace: kube-system, Target: deployment/coredns
+I0724 16:13:33.819775       1 autoscaler_server.go:169] ConfigMap not found: configmaps "coredns-autoscaler" not found, will create one with default params
+I0724 16:13:33.828754       1 k8sclient.go:154] Created ConfigMap coredns-autoscaler in namespace kube-system
+I0724 16:13:33.828888       1 plugin.go:50] Set control mode to ladder
+I0724 16:13:33.828900       1 ladder_controller.go:73] Detected ConfigMap version change (old:  new: 2161) - rebuilding lookup entries
+I0724 16:13:33.828907       1 ladder_controller.go:74] Params from apiserver: 
+{"coresToReplicas":[[1,2],[512,3],[1024,4],[2048,5]],"nodesToReplicas":[[1,2],[8,3],[16,4],[32,5]]}
+I0724 16:13:33.832697       1 k8sclient.go:264] Cluster status: SchedulableNodes[3], TotalNodes[3], SchedulableCores[12], TotalCores[12]
+I0724 16:13:33.832714       1 k8sclient.go:265] Replicas are not as expected : updating replicas from 1 to 2
+==== END logs for container autoscaler of pod kube-system/coredns-autoscaler-57c7bcd8d4-9t868 ====

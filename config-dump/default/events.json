@@ -1,0 +1,1401 @@
+{
+    "kind": "EventList",
+    "apiVersion": "v1",
+    "metadata": {
+        "resourceVersion": "1143"
+    },
+    "items": [
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000000.18553bf2c843c343",
+                "namespace": "default",
+                "uid": "42802ad1-d40c-41fb-a4a9-0ea0ab1b4d32",
+                "resourceVersion": "164",
+                "creationTimestamp": "2025-07-24T16:12:23Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000000",
+                "uid": "aks-systempool-67290672-vmss000000"
+            },
+            "reason": "Starting",
+            "message": "Starting kubelet.",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000000"
+            },
+            "firstTimestamp": "2025-07-24T16:12:23Z",
+            "lastTimestamp": "2025-07-24T16:12:23Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000000"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000000.18553bf2ca555457",
+                "namespace": "default",
+                "uid": "e52395e4-bedf-4f3e-8814-07bcf64394a7",
+                "resourceVersion": "165",
+                "creationTimestamp": "2025-07-24T16:12:23Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000000",
+                "uid": "aks-systempool-67290672-vmss000000"
+            },
+            "reason": "InvalidDiskCapacity",
+            "message": "invalid capacity 0 on image filesystem",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000000"
+            },
+            "firstTimestamp": "2025-07-24T16:12:23Z",
+            "lastTimestamp": "2025-07-24T16:12:23Z",
+            "count": 1,
+            "type": "Warning",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000000"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000000.18553bf2cc00a266",
+                "namespace": "default",
+                "uid": "502775a7-03e3-4453-9bbd-ade5bbc3ba6c",
+                "resourceVersion": "170",
+                "creationTimestamp": "2025-07-24T16:12:23Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000000",
+                "uid": "aks-systempool-67290672-vmss000000"
+            },
+            "reason": "NodeHasSufficientMemory",
+            "message": "Node aks-systempool-67290672-vmss000000 status is now: NodeHasSufficientMemory",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000000"
+            },
+            "firstTimestamp": "2025-07-24T16:12:23Z",
+            "lastTimestamp": "2025-07-24T16:12:24Z",
+            "count": 2,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000000"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000000.18553bf2cc00ce0d",
+                "namespace": "default",
+                "uid": "f0090913-b0fe-47e7-b58c-0548f8b6eebb",
+                "resourceVersion": "171",
+                "creationTimestamp": "2025-07-24T16:12:23Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000000",
+                "uid": "aks-systempool-67290672-vmss000000"
+            },
+            "reason": "NodeHasNoDiskPressure",
+            "message": "Node aks-systempool-67290672-vmss000000 status is now: NodeHasNoDiskPressure",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000000"
+            },
+            "firstTimestamp": "2025-07-24T16:12:23Z",
+            "lastTimestamp": "2025-07-24T16:12:24Z",
+            "count": 2,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000000"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000000.18553bf2cc0104e1",
+                "namespace": "default",
+                "uid": "8d18ca4b-793e-4cf1-8638-6377e61e1733",
+                "resourceVersion": "172",
+                "creationTimestamp": "2025-07-24T16:12:23Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000000",
+                "uid": "aks-systempool-67290672-vmss000000"
+            },
+            "reason": "NodeHasSufficientPID",
+            "message": "Node aks-systempool-67290672-vmss000000 status is now: NodeHasSufficientPID",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000000"
+            },
+            "firstTimestamp": "2025-07-24T16:12:23Z",
+            "lastTimestamp": "2025-07-24T16:12:24Z",
+            "count": 2,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000000"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000000.18553bf2cf687115",
+                "namespace": "default",
+                "uid": "af785a3b-0419-4de4-b9f2-dbd1d4ca718f",
+                "resourceVersion": "169",
+                "creationTimestamp": "2025-07-24T16:12:23Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000000",
+                "uid": "aks-systempool-67290672-vmss000000"
+            },
+            "reason": "NodeAllocatableEnforced",
+            "message": "Updated Node Allocatable limit across pods",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000000"
+            },
+            "firstTimestamp": "2025-07-24T16:12:23Z",
+            "lastTimestamp": "2025-07-24T16:12:23Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000000"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000000.18553bf2d7b5b165",
+                "namespace": "default",
+                "uid": "18e4176e-0336-42b5-8a04-220e54f7cd38",
+                "resourceVersion": "173",
+                "creationTimestamp": "2025-07-24T16:12:24Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000000",
+                "uid": "aks-systempool-67290672-vmss000000"
+            },
+            "reason": "CreatedNNC",
+            "message": "Created NodeNetworkConfig aks-systempool-67290672-vmss000000",
+            "source": {
+                "component": "dnc-rc/node-reconciler"
+            },
+            "firstTimestamp": "2025-07-24T16:12:24Z",
+            "lastTimestamp": "2025-07-24T16:12:24Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "dnc-rc/node-reconciler",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000000.18553bf3a59287d2",
+                "namespace": "default",
+                "uid": "0fbb5cc0-b27f-42f1-9d1a-a1127fb65abe",
+                "resourceVersion": "210",
+                "creationTimestamp": "2025-07-24T16:12:27Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000000",
+                "uid": "0498f11b-016f-4a3a-952d-1b3132d04d0f",
+                "apiVersion": "v1"
+            },
+            "reason": "RegisteredNode",
+            "message": "Node aks-systempool-67290672-vmss000000 event: Registered Node aks-systempool-67290672-vmss000000 in Controller",
+            "source": {
+                "component": "node-controller"
+            },
+            "firstTimestamp": "2025-07-24T16:12:27Z",
+            "lastTimestamp": "2025-07-24T16:12:27Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "node-controller",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000000.18553bf4f2283c17",
+                "namespace": "default",
+                "uid": "39e812d0-a7e4-42f5-a99d-8db647c98b63",
+                "resourceVersion": "319",
+                "creationTimestamp": "2025-07-24T16:12:33Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000000",
+                "uid": "aks-systempool-67290672-vmss000000"
+            },
+            "reason": "NodeReady",
+            "message": "Node aks-systempool-67290672-vmss000000 status is now: NodeReady",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000000"
+            },
+            "firstTimestamp": "2025-07-24T16:12:33Z",
+            "lastTimestamp": "2025-07-24T16:12:33Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000000"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000000.18553c35460c9e20",
+                "namespace": "default",
+                "uid": "724ea711-2590-49b0-83f9-e9e09a426e59",
+                "resourceVersion": "936",
+                "creationTimestamp": "2025-07-24T16:17:09Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000000",
+                "uid": "0498f11b-016f-4a3a-952d-1b3132d04d0f",
+                "apiVersion": "v1"
+            },
+            "reason": "RegisteredNode",
+            "message": "Node aks-systempool-67290672-vmss000000 event: Registered Node aks-systempool-67290672-vmss000000 in Controller",
+            "source": {
+                "component": "node-controller"
+            },
+            "firstTimestamp": "2025-07-24T16:17:09Z",
+            "lastTimestamp": "2025-07-24T16:17:09Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "node-controller",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000000.18553c4381555830",
+                "namespace": "default",
+                "uid": "341be768-7bab-4725-8f48-ba173c07388a",
+                "resourceVersion": "1066",
+                "creationTimestamp": "2025-07-24T16:18:10Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000000",
+                "uid": "aks-systempool-67290672-vmss000000"
+            },
+            "reason": "NoVMEventScheduled",
+            "message": "Node condition VMEventScheduled is now: Unknown, reason: NoVMEventScheduled, message: \"IMDS query failed, exit code: 28\\nConnection timed out after 24 seconds.\"",
+            "source": {
+                "component": "custom-scheduledevents-consolidated-condition-plugin-monitor",
+                "host": "aks-systempool-67290672-vmss000000"
+            },
+            "firstTimestamp": "2025-07-24T16:18:10Z",
+            "lastTimestamp": "2025-07-24T16:18:10Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "custom-scheduledevents-consolidated-condition-plugin-monitor",
+            "reportingInstance": "aks-systempool-67290672-vmss000000"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000000.18553c4381881850",
+                "namespace": "default",
+                "uid": "4c3c4888-a0c7-4c67-9e82-b0a0789764e0",
+                "resourceVersion": "1067",
+                "creationTimestamp": "2025-07-24T16:18:10Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000000",
+                "uid": "aks-systempool-67290672-vmss000000"
+            },
+            "reason": "PreemptScheduled",
+            "message": "IMDS query failed, exit code: 28\nConnection timed out after 24 seconds.",
+            "source": {
+                "component": "custom-scheduledevents-consolidated-preempt-plugin-monitor",
+                "host": "aks-systempool-67290672-vmss000000"
+            },
+            "firstTimestamp": "2025-07-24T16:18:10Z",
+            "lastTimestamp": "2025-07-24T16:18:10Z",
+            "count": 1,
+            "type": "Warning",
+            "eventTime": null,
+            "reportingComponent": "custom-scheduledevents-consolidated-preempt-plugin-monitor",
+            "reportingInstance": "aks-systempool-67290672-vmss000000"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000000.18553c43b0ab3b49",
+                "namespace": "default",
+                "uid": "5a8c8b40-397f-4d15-b2b5-215cf5898e3c",
+                "resourceVersion": "1068",
+                "creationTimestamp": "2025-07-24T16:18:11Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000000",
+                "uid": "0498f11b-016f-4a3a-952d-1b3132d04d0f",
+                "apiVersion": "v1",
+                "resourceVersion": "11452"
+            },
+            "reason": "VMEventScheduled",
+            "message": "Status condition transitioned, Type: VMEventScheduled, Status: False -\u003e Unknown, Reason: NoVMEventScheduled, Message: IMDS query failed, exit code: 28\nConnection timed out after 24 seconds.",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:18:11Z",
+            "lastTimestamp": "2025-07-24T16:18:11Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000000.18553c45d83ac7e9",
+                "namespace": "default",
+                "uid": "2dac31d4-bb56-47df-a095-63b810170e7d",
+                "resourceVersion": "1071",
+                "creationTimestamp": "2025-07-24T16:18:20Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000000",
+                "uid": "aks-systempool-67290672-vmss000000"
+            },
+            "reason": "NoVMEventScheduled",
+            "message": "Node condition VMEventScheduled is now: False, reason: NoVMEventScheduled, message: \"VM has no scheduled event\"",
+            "source": {
+                "component": "custom-scheduledevents-consolidated-condition-plugin-monitor",
+                "host": "aks-systempool-67290672-vmss000000"
+            },
+            "firstTimestamp": "2025-07-24T16:18:20Z",
+            "lastTimestamp": "2025-07-24T16:18:20Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "custom-scheduledevents-consolidated-condition-plugin-monitor",
+            "reportingInstance": "aks-systempool-67290672-vmss000000"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000000.18553c4604660910",
+                "namespace": "default",
+                "uid": "4dfb4974-10e3-442c-97bb-c16d04cfb6b0",
+                "resourceVersion": "1072",
+                "creationTimestamp": "2025-07-24T16:18:21Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000000",
+                "uid": "0498f11b-016f-4a3a-952d-1b3132d04d0f",
+                "apiVersion": "v1",
+                "resourceVersion": "13562"
+            },
+            "reason": "VMEventScheduled",
+            "message": "Status condition transitioned, Type: VMEventScheduled, Status: Unknown -\u003e False, Reason: NoVMEventScheduled, Message: VM has no scheduled event",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:18:21Z",
+            "lastTimestamp": "2025-07-24T16:18:21Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000001.18553bf456710c76",
+                "namespace": "default",
+                "uid": "810ceeea-49dd-4d50-9d4d-ddaff359fac1",
+                "resourceVersion": "243",
+                "creationTimestamp": "2025-07-24T16:12:30Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000001",
+                "uid": "aks-systempool-67290672-vmss000001"
+            },
+            "reason": "Starting",
+            "message": "Starting kubelet.",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000001"
+            },
+            "firstTimestamp": "2025-07-24T16:12:30Z",
+            "lastTimestamp": "2025-07-24T16:12:30Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000001"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000001.18553bf458b2872a",
+                "namespace": "default",
+                "uid": "44568c03-994d-4173-9168-7a016ed395dc",
+                "resourceVersion": "248",
+                "creationTimestamp": "2025-07-24T16:12:30Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000001",
+                "uid": "aks-systempool-67290672-vmss000001"
+            },
+            "reason": "InvalidDiskCapacity",
+            "message": "invalid capacity 0 on image filesystem",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000001"
+            },
+            "firstTimestamp": "2025-07-24T16:12:30Z",
+            "lastTimestamp": "2025-07-24T16:12:30Z",
+            "count": 1,
+            "type": "Warning",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000001"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000001.18553bf4594caf3f",
+                "namespace": "default",
+                "uid": "bbce2a9c-1a0e-4c40-85a3-84ec482507a1",
+                "resourceVersion": "265",
+                "creationTimestamp": "2025-07-24T16:12:30Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000001",
+                "uid": "aks-systempool-67290672-vmss000001"
+            },
+            "reason": "NodeHasSufficientMemory",
+            "message": "Node aks-systempool-67290672-vmss000001 status is now: NodeHasSufficientMemory",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000001"
+            },
+            "firstTimestamp": "2025-07-24T16:12:30Z",
+            "lastTimestamp": "2025-07-24T16:12:30Z",
+            "count": 2,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000001"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000001.18553bf4594cfdab",
+                "namespace": "default",
+                "uid": "43123a8f-b5a5-44e5-b926-e2c366f8bb91",
+                "resourceVersion": "266",
+                "creationTimestamp": "2025-07-24T16:12:30Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000001",
+                "uid": "aks-systempool-67290672-vmss000001"
+            },
+            "reason": "NodeHasNoDiskPressure",
+            "message": "Node aks-systempool-67290672-vmss000001 status is now: NodeHasNoDiskPressure",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000001"
+            },
+            "firstTimestamp": "2025-07-24T16:12:30Z",
+            "lastTimestamp": "2025-07-24T16:12:30Z",
+            "count": 2,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000001"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000001.18553bf4594d37fe",
+                "namespace": "default",
+                "uid": "07a53b10-3861-4bf3-8591-e5e22f183d9c",
+                "resourceVersion": "267",
+                "creationTimestamp": "2025-07-24T16:12:30Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000001",
+                "uid": "aks-systempool-67290672-vmss000001"
+            },
+            "reason": "NodeHasSufficientPID",
+            "message": "Node aks-systempool-67290672-vmss000001 status is now: NodeHasSufficientPID",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000001"
+            },
+            "firstTimestamp": "2025-07-24T16:12:30Z",
+            "lastTimestamp": "2025-07-24T16:12:30Z",
+            "count": 2,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000001"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000001.18553bf45fbba997",
+                "namespace": "default",
+                "uid": "82a733cf-98b7-4e37-b54f-ff1e40ced11e",
+                "resourceVersion": "264",
+                "creationTimestamp": "2025-07-24T16:12:30Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000001",
+                "uid": "aks-systempool-67290672-vmss000001"
+            },
+            "reason": "NodeAllocatableEnforced",
+            "message": "Updated Node Allocatable limit across pods",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000001"
+            },
+            "firstTimestamp": "2025-07-24T16:12:30Z",
+            "lastTimestamp": "2025-07-24T16:12:30Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000001"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000001.18553bf467f2a65c",
+                "namespace": "default",
+                "uid": "9423efa5-6a0f-485f-9a9d-889505e753f7",
+                "resourceVersion": "268",
+                "creationTimestamp": "2025-07-24T16:12:30Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000001",
+                "uid": "aks-systempool-67290672-vmss000001"
+            },
+            "reason": "CreatedNNC",
+            "message": "Created NodeNetworkConfig aks-systempool-67290672-vmss000001",
+            "source": {
+                "component": "dnc-rc/node-reconciler"
+            },
+            "firstTimestamp": "2025-07-24T16:12:30Z",
+            "lastTimestamp": "2025-07-24T16:12:30Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "dnc-rc/node-reconciler",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000001.18553bf4cfa28024",
+                "namespace": "default",
+                "uid": "615a8b84-17a1-40f1-8e52-bcadadd1c414",
+                "resourceVersion": "307",
+                "creationTimestamp": "2025-07-24T16:12:32Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000001",
+                "uid": "6da69c07-63d2-4426-a5be-9cc16c4a4e68",
+                "apiVersion": "v1"
+            },
+            "reason": "RegisteredNode",
+            "message": "Node aks-systempool-67290672-vmss000001 event: Registered Node aks-systempool-67290672-vmss000001 in Controller",
+            "source": {
+                "component": "node-controller"
+            },
+            "firstTimestamp": "2025-07-24T16:12:32Z",
+            "lastTimestamp": "2025-07-24T16:12:32Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "node-controller",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000001.18553bf6b7ed958b",
+                "namespace": "default",
+                "uid": "37a914f2-5c85-48fd-9da5-69bf5b161657",
+                "resourceVersion": "383",
+                "creationTimestamp": "2025-07-24T16:12:40Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000001",
+                "uid": "aks-systempool-67290672-vmss000001"
+            },
+            "reason": "NodeReady",
+            "message": "Node aks-systempool-67290672-vmss000001 status is now: NodeReady",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000001"
+            },
+            "firstTimestamp": "2025-07-24T16:12:40Z",
+            "lastTimestamp": "2025-07-24T16:12:40Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000001"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000001.18553c35460d30f5",
+                "namespace": "default",
+                "uid": "336134b6-d259-4184-92fd-04d9c505756d",
+                "resourceVersion": "937",
+                "creationTimestamp": "2025-07-24T16:17:09Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000001",
+                "uid": "6da69c07-63d2-4426-a5be-9cc16c4a4e68",
+                "apiVersion": "v1"
+            },
+            "reason": "RegisteredNode",
+            "message": "Node aks-systempool-67290672-vmss000001 event: Registered Node aks-systempool-67290672-vmss000001 in Controller",
+            "source": {
+                "component": "node-controller"
+            },
+            "firstTimestamp": "2025-07-24T16:17:09Z",
+            "lastTimestamp": "2025-07-24T16:17:09Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "node-controller",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000002.18553bf44a31b339",
+                "namespace": "default",
+                "uid": "bc276704-b35b-4424-b019-61442a2bd2ae",
+                "resourceVersion": "234",
+                "creationTimestamp": "2025-07-24T16:12:30Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000002",
+                "uid": "aks-systempool-67290672-vmss000002"
+            },
+            "reason": "Starting",
+            "message": "Starting kubelet.",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000002"
+            },
+            "firstTimestamp": "2025-07-24T16:12:30Z",
+            "lastTimestamp": "2025-07-24T16:12:30Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000002"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000002.18553bf44c205661",
+                "namespace": "default",
+                "uid": "feddfb64-adfc-45bd-bb69-63ec73224323",
+                "resourceVersion": "235",
+                "creationTimestamp": "2025-07-24T16:12:30Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000002",
+                "uid": "aks-systempool-67290672-vmss000002"
+            },
+            "reason": "InvalidDiskCapacity",
+            "message": "invalid capacity 0 on image filesystem",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000002"
+            },
+            "firstTimestamp": "2025-07-24T16:12:30Z",
+            "lastTimestamp": "2025-07-24T16:12:30Z",
+            "count": 1,
+            "type": "Warning",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000002"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000002.18553bf44cdd54a3",
+                "namespace": "default",
+                "uid": "5d05638d-c4dc-446a-8088-d5784f1d6c48",
+                "resourceVersion": "240",
+                "creationTimestamp": "2025-07-24T16:12:30Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000002",
+                "uid": "aks-systempool-67290672-vmss000002"
+            },
+            "reason": "NodeHasSufficientMemory",
+            "message": "Node aks-systempool-67290672-vmss000002 status is now: NodeHasSufficientMemory",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000002"
+            },
+            "firstTimestamp": "2025-07-24T16:12:30Z",
+            "lastTimestamp": "2025-07-24T16:12:30Z",
+            "count": 2,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000002"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000002.18553bf44cdd804f",
+                "namespace": "default",
+                "uid": "79cddc91-d13a-4d1d-a435-e403823ebe91",
+                "resourceVersion": "241",
+                "creationTimestamp": "2025-07-24T16:12:30Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000002",
+                "uid": "aks-systempool-67290672-vmss000002"
+            },
+            "reason": "NodeHasNoDiskPressure",
+            "message": "Node aks-systempool-67290672-vmss000002 status is now: NodeHasNoDiskPressure",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000002"
+            },
+            "firstTimestamp": "2025-07-24T16:12:30Z",
+            "lastTimestamp": "2025-07-24T16:12:30Z",
+            "count": 2,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000002"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000002.18553bf44cddab2a",
+                "namespace": "default",
+                "uid": "e2c72fb7-9eb9-4821-9a6d-9e279241838e",
+                "resourceVersion": "242",
+                "creationTimestamp": "2025-07-24T16:12:30Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000002",
+                "uid": "aks-systempool-67290672-vmss000002"
+            },
+            "reason": "NodeHasSufficientPID",
+            "message": "Node aks-systempool-67290672-vmss000002 status is now: NodeHasSufficientPID",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000002"
+            },
+            "firstTimestamp": "2025-07-24T16:12:30Z",
+            "lastTimestamp": "2025-07-24T16:12:30Z",
+            "count": 2,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000002"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000002.18553bf451f0a22d",
+                "namespace": "default",
+                "uid": "788136b0-996a-485c-b57f-a56d246601f1",
+                "resourceVersion": "239",
+                "creationTimestamp": "2025-07-24T16:12:30Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000002",
+                "uid": "aks-systempool-67290672-vmss000002"
+            },
+            "reason": "NodeAllocatableEnforced",
+            "message": "Updated Node Allocatable limit across pods",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000002"
+            },
+            "firstTimestamp": "2025-07-24T16:12:30Z",
+            "lastTimestamp": "2025-07-24T16:12:30Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000002"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000002.18553bf459ca6080",
+                "namespace": "default",
+                "uid": "b62ba55e-1413-4fb3-be8b-d7a562c5a2de",
+                "resourceVersion": "244",
+                "creationTimestamp": "2025-07-24T16:12:30Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000002",
+                "uid": "aks-systempool-67290672-vmss000002"
+            },
+            "reason": "CreatedNNC",
+            "message": "Created NodeNetworkConfig aks-systempool-67290672-vmss000002",
+            "source": {
+                "component": "dnc-rc/node-reconciler"
+            },
+            "firstTimestamp": "2025-07-24T16:12:30Z",
+            "lastTimestamp": "2025-07-24T16:12:30Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "dnc-rc/node-reconciler",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000002.18553bf4cfa2190a",
+                "namespace": "default",
+                "uid": "80085bf7-e692-47bf-86a0-6a3cbfb2ae81",
+                "resourceVersion": "305",
+                "creationTimestamp": "2025-07-24T16:12:32Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000002",
+                "uid": "75093edb-cbad-4272-b6e8-16978cc09c0c",
+                "apiVersion": "v1"
+            },
+            "reason": "RegisteredNode",
+            "message": "Node aks-systempool-67290672-vmss000002 event: Registered Node aks-systempool-67290672-vmss000002 in Controller",
+            "source": {
+                "component": "node-controller"
+            },
+            "firstTimestamp": "2025-07-24T16:12:32Z",
+            "lastTimestamp": "2025-07-24T16:12:32Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "node-controller",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000002.18553bf684751d9b",
+                "namespace": "default",
+                "uid": "77802581-b861-4042-a1c3-a6216d829abb",
+                "resourceVersion": "381",
+                "creationTimestamp": "2025-07-24T16:12:39Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000002",
+                "uid": "aks-systempool-67290672-vmss000002"
+            },
+            "reason": "NodeReady",
+            "message": "Node aks-systempool-67290672-vmss000002 status is now: NodeReady",
+            "source": {
+                "component": "kubelet",
+                "host": "aks-systempool-67290672-vmss000002"
+            },
+            "firstTimestamp": "2025-07-24T16:12:39Z",
+            "lastTimestamp": "2025-07-24T16:12:39Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "kubelet",
+            "reportingInstance": "aks-systempool-67290672-vmss000002"
+        },
+        {
+            "metadata": {
+                "name": "aks-systempool-67290672-vmss000002.18553c35460d830c",
+                "namespace": "default",
+                "uid": "5b6fff72-742e-459b-9132-4e7b0bc5dfc5",
+                "resourceVersion": "938",
+                "creationTimestamp": "2025-07-24T16:17:09Z"
+            },
+            "involvedObject": {
+                "kind": "Node",
+                "name": "aks-systempool-67290672-vmss000002",
+                "uid": "75093edb-cbad-4272-b6e8-16978cc09c0c",
+                "apiVersion": "v1"
+            },
+            "reason": "RegisteredNode",
+            "message": "Node aks-systempool-67290672-vmss000002 event: Registered Node aks-systempool-67290672-vmss000002 in Controller",
+            "source": {
+                "component": "node-controller"
+            },
+            "firstTimestamp": "2025-07-24T16:17:09Z",
+            "lastTimestamp": "2025-07-24T16:17:09Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "node-controller",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "default.18553c00b75907eb",
+                "namespace": "default",
+                "uid": "603fd5bf-9807-4db5-b7ac-9f7a9f01ce64",
+                "resourceVersion": "575",
+                "creationTimestamp": "2025-07-24T16:13:23Z"
+            },
+            "involvedObject": {
+                "kind": "NodePool",
+                "name": "default",
+                "uid": "5ad290a5-d4f6-47af-b95a-3ad6a003fb3f",
+                "apiVersion": "karpenter.sh/v1",
+                "resourceVersion": "1999"
+            },
+            "reason": "NodeClassReady",
+            "message": "Status condition transitioned, Type: NodeClassReady, Status: Unknown -\u003e False, Reason: NodeClassReadinessUnknown, Message: Node Class Readiness Unknown",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:23Z",
+            "lastTimestamp": "2025-07-24T16:13:23Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "default.18553c00b759414d",
+                "namespace": "default",
+                "uid": "df325618-91b5-489e-a9e4-862a19824b38",
+                "resourceVersion": "576",
+                "creationTimestamp": "2025-07-24T16:13:23Z"
+            },
+            "involvedObject": {
+                "kind": "NodePool",
+                "name": "default",
+                "uid": "5ad290a5-d4f6-47af-b95a-3ad6a003fb3f",
+                "apiVersion": "karpenter.sh/v1",
+                "resourceVersion": "1999"
+            },
+            "reason": "Ready",
+            "message": "Status condition transitioned, Type: Ready, Status: Unknown -\u003e False, Reason: UnhealthyDependents, Message: NodeClassReady=False, ValidationSucceeded=Unknown",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:23Z",
+            "lastTimestamp": "2025-07-24T16:13:23Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "default.18553c00b86c14d4",
+                "namespace": "default",
+                "uid": "9a2eaafb-da8d-4bb2-a113-b6054fe7dfaa",
+                "resourceVersion": "577",
+                "creationTimestamp": "2025-07-24T16:13:23Z"
+            },
+            "involvedObject": {
+                "kind": "NodePool",
+                "name": "default",
+                "uid": "5ad290a5-d4f6-47af-b95a-3ad6a003fb3f",
+                "apiVersion": "karpenter.sh/v1",
+                "resourceVersion": "2002"
+            },
+            "reason": "ValidationSucceeded",
+            "message": "Status condition transitioned, Type: ValidationSucceeded, Status: Unknown -\u003e True, Reason: ValidationSucceeded",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:23Z",
+            "lastTimestamp": "2025-07-24T16:13:23Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "default.18553c00e419ef73",
+                "namespace": "default",
+                "uid": "0e3426be-2125-4810-af9c-5e04e0a0aa52",
+                "resourceVersion": "592",
+                "creationTimestamp": "2025-07-24T16:13:24Z"
+            },
+            "involvedObject": {
+                "kind": "AKSNodeClass",
+                "name": "default",
+                "uid": "6e55620a-8b45-4b63-b3c4-75d5797b4aed",
+                "apiVersion": "karpenter.azure.com/v1beta1",
+                "resourceVersion": "2017"
+            },
+            "reason": "KubernetesVersionReady",
+            "message": "Status condition transitioned, Type: KubernetesVersionReady, Status: Unknown -\u003e True, Reason: KubernetesVersionReady",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:24Z",
+            "lastTimestamp": "2025-07-24T16:13:24Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "default.18553c00e41a0c0e",
+                "namespace": "default",
+                "uid": "607744b9-e263-4c60-baf6-0d9a278eb54f",
+                "resourceVersion": "593",
+                "creationTimestamp": "2025-07-24T16:13:24Z"
+            },
+            "involvedObject": {
+                "kind": "AKSNodeClass",
+                "name": "default",
+                "uid": "6e55620a-8b45-4b63-b3c4-75d5797b4aed",
+                "apiVersion": "karpenter.azure.com/v1beta1",
+                "resourceVersion": "2017"
+            },
+            "reason": "ImagesReady",
+            "message": "Status condition transitioned, Type: ImagesReady, Status: Unknown -\u003e True, Reason: ImagesReady",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:24Z",
+            "lastTimestamp": "2025-07-24T16:13:24Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "default.18553c00e41a2602",
+                "namespace": "default",
+                "uid": "44fc0bc1-6ad0-48d5-9aeb-a719d0a85c50",
+                "resourceVersion": "594",
+                "creationTimestamp": "2025-07-24T16:13:24Z"
+            },
+            "involvedObject": {
+                "kind": "AKSNodeClass",
+                "name": "default",
+                "uid": "6e55620a-8b45-4b63-b3c4-75d5797b4aed",
+                "apiVersion": "karpenter.azure.com/v1beta1",
+                "resourceVersion": "2017"
+            },
+            "reason": "Ready",
+            "message": "Status condition transitioned, Type: Ready, Status: Unknown -\u003e True, Reason: Ready",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:24Z",
+            "lastTimestamp": "2025-07-24T16:13:24Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "default.18553c00e4c8cff0",
+                "namespace": "default",
+                "uid": "90fbd501-dcff-403a-b06c-f0f162c46b66",
+                "resourceVersion": "595",
+                "creationTimestamp": "2025-07-24T16:13:24Z"
+            },
+            "involvedObject": {
+                "kind": "NodePool",
+                "name": "default",
+                "uid": "5ad290a5-d4f6-47af-b95a-3ad6a003fb3f",
+                "apiVersion": "karpenter.sh/v1",
+                "resourceVersion": "2018"
+            },
+            "reason": "NodeClassReady",
+            "message": "Status condition transitioned, Type: NodeClassReady, Status: False -\u003e True, Reason: NodeClassReady",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:24Z",
+            "lastTimestamp": "2025-07-24T16:13:24Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "default.18553c00e4c90895",
+                "namespace": "default",
+                "uid": "30ee3c5f-da2d-4104-98f7-1d97d4fd9f61",
+                "resourceVersion": "596",
+                "creationTimestamp": "2025-07-24T16:13:24Z"
+            },
+            "involvedObject": {
+                "kind": "NodePool",
+                "name": "default",
+                "uid": "5ad290a5-d4f6-47af-b95a-3ad6a003fb3f",
+                "apiVersion": "karpenter.sh/v1",
+                "resourceVersion": "2018"
+            },
+            "reason": "Ready",
+            "message": "Status condition transitioned, Type: Ready, Status: False -\u003e True, Reason: Ready",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:24Z",
+            "lastTimestamp": "2025-07-24T16:13:24Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "system-surge.18553c00b758337f",
+                "namespace": "default",
+                "uid": "ed137a9f-f5e2-4cc4-93e7-717f86a69c89",
+                "resourceVersion": "574",
+                "creationTimestamp": "2025-07-24T16:13:23Z"
+            },
+            "involvedObject": {
+                "kind": "NodePool",
+                "name": "system-surge",
+                "uid": "82e4f70d-c86b-4a7c-810c-8133e149c8bd",
+                "apiVersion": "karpenter.sh/v1",
+                "resourceVersion": "1998"
+            },
+            "reason": "ValidationSucceeded",
+            "message": "Status condition transitioned, Type: ValidationSucceeded, Status: Unknown -\u003e True, Reason: ValidationSucceeded",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:23Z",
+            "lastTimestamp": "2025-07-24T16:13:23Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "system-surge.18553c00b89cc4cd",
+                "namespace": "default",
+                "uid": "144fa8ba-6403-49cc-b41c-8d7d6d8b445b",
+                "resourceVersion": "578",
+                "creationTimestamp": "2025-07-24T16:13:23Z"
+            },
+            "involvedObject": {
+                "kind": "NodePool",
+                "name": "system-surge",
+                "uid": "82e4f70d-c86b-4a7c-810c-8133e149c8bd",
+                "apiVersion": "karpenter.sh/v1",
+                "resourceVersion": "2003"
+            },
+            "reason": "NodeClassReady",
+            "message": "Status condition transitioned, Type: NodeClassReady, Status: Unknown -\u003e False, Reason: NodeClassReadinessUnknown, Message: Node Class Readiness Unknown",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:23Z",
+            "lastTimestamp": "2025-07-24T16:13:23Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "system-surge.18553c00b89cfca9",
+                "namespace": "default",
+                "uid": "0985c713-89eb-4978-adc8-7b5d392bd5e9",
+                "resourceVersion": "579",
+                "creationTimestamp": "2025-07-24T16:13:23Z"
+            },
+            "involvedObject": {
+                "kind": "NodePool",
+                "name": "system-surge",
+                "uid": "82e4f70d-c86b-4a7c-810c-8133e149c8bd",
+                "apiVersion": "karpenter.sh/v1",
+                "resourceVersion": "2003"
+            },
+            "reason": "Ready",
+            "message": "Status condition transitioned, Type: Ready, Status: Unknown -\u003e False, Reason: UnhealthyDependents, Message: NodeClassReady=False",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:23Z",
+            "lastTimestamp": "2025-07-24T16:13:23Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "system-surge.18553c00e05eb5cd",
+                "namespace": "default",
+                "uid": "d014e431-db5d-4866-ad29-ffbd727834b7",
+                "resourceVersion": "586",
+                "creationTimestamp": "2025-07-24T16:13:24Z"
+            },
+            "involvedObject": {
+                "kind": "AKSNodeClass",
+                "name": "system-surge",
+                "uid": "0b4bad85-5e90-46ed-93da-c7038671cc7c",
+                "apiVersion": "karpenter.azure.com/v1beta1",
+                "resourceVersion": "2016"
+            },
+            "reason": "KubernetesVersionReady",
+            "message": "Status condition transitioned, Type: KubernetesVersionReady, Status: Unknown -\u003e True, Reason: KubernetesVersionReady",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:24Z",
+            "lastTimestamp": "2025-07-24T16:13:24Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "system-surge.18553c00e05ef13e",
+                "namespace": "default",
+                "uid": "9e9e5b7d-6211-49b1-9d57-e521f02d4ba2",
+                "resourceVersion": "587",
+                "creationTimestamp": "2025-07-24T16:13:24Z"
+            },
+            "involvedObject": {
+                "kind": "AKSNodeClass",
+                "name": "system-surge",
+                "uid": "0b4bad85-5e90-46ed-93da-c7038671cc7c",
+                "apiVersion": "karpenter.azure.com/v1beta1",
+                "resourceVersion": "2016"
+            },
+            "reason": "ImagesReady",
+            "message": "Status condition transitioned, Type: ImagesReady, Status: Unknown -\u003e True, Reason: ImagesReady",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:24Z",
+            "lastTimestamp": "2025-07-24T16:13:24Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "system-surge.18553c00e05f08b6",
+                "namespace": "default",
+                "uid": "d7eb278c-e285-4072-bbb6-8e1e899ee490",
+                "resourceVersion": "588",
+                "creationTimestamp": "2025-07-24T16:13:24Z"
+            },
+            "involvedObject": {
+                "kind": "AKSNodeClass",
+                "name": "system-surge",
+                "uid": "0b4bad85-5e90-46ed-93da-c7038671cc7c",
+                "apiVersion": "karpenter.azure.com/v1beta1",
+                "resourceVersion": "2016"
+            },
+            "reason": "Ready",
+            "message": "Status condition transitioned, Type: Ready, Status: Unknown -\u003e True, Reason: Ready",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:24Z",
+            "lastTimestamp": "2025-07-24T16:13:24Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "system-surge.18553c00e4cc3dec",
+                "namespace": "default",
+                "uid": "cd435cc9-7aff-4575-a5f4-f94266d4a620",
+                "resourceVersion": "597",
+                "creationTimestamp": "2025-07-24T16:13:24Z"
+            },
+            "involvedObject": {
+                "kind": "NodePool",
+                "name": "system-surge",
+                "uid": "82e4f70d-c86b-4a7c-810c-8133e149c8bd",
+                "apiVersion": "karpenter.sh/v1",
+                "resourceVersion": "2019"
+            },
+            "reason": "NodeClassReady",
+            "message": "Status condition transitioned, Type: NodeClassReady, Status: False -\u003e True, Reason: NodeClassReady",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:24Z",
+            "lastTimestamp": "2025-07-24T16:13:24Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        },
+        {
+            "metadata": {
+                "name": "system-surge.18553c00e4cc5998",
+                "namespace": "default",
+                "uid": "1b6a869d-8b69-4c94-b406-9caf19750ce6",
+                "resourceVersion": "598",
+                "creationTimestamp": "2025-07-24T16:13:24Z"
+            },
+            "involvedObject": {
+                "kind": "NodePool",
+                "name": "system-surge",
+                "uid": "82e4f70d-c86b-4a7c-810c-8133e149c8bd",
+                "apiVersion": "karpenter.sh/v1",
+                "resourceVersion": "2019"
+            },
+            "reason": "Ready",
+            "message": "Status condition transitioned, Type: Ready, Status: False -\u003e True, Reason: Ready",
+            "source": {
+                "component": "karpenter"
+            },
+            "firstTimestamp": "2025-07-24T16:13:24Z",
+            "lastTimestamp": "2025-07-24T16:13:24Z",
+            "count": 1,
+            "type": "Normal",
+            "eventTime": null,
+            "reportingComponent": "karpenter",
+            "reportingInstance": ""
+        }
+    ]
+}

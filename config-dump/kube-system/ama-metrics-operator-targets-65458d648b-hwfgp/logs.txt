@@ -1,0 +1,71 @@
+==== START logs for container targetallocator of pod kube-system/ama-metrics-operator-targets-65458d648b-hwfgp ====
+time=2025-07-24T16:17:47.558Z level=WARN msg="ignoring \"scrapeProtocol=PrometheusText1.0.0\" not supported by Prometheus" version=2.55.1
+==== END logs for container targetallocator of pod kube-system/ama-metrics-operator-targets-65458d648b-hwfgp ====
+==== START logs for container config-reader of pod kube-system/ama-metrics-operator-targets-65458d648b-hwfgp ====
+[0;36mAZMON_AGENT_CFG_FILE_VERSION[0m=ver1
+[0;36mAZMON_AGENT_CFG_SCHEMA_VERSION[0m=v1
+Config version file not found. Setting metricsConfigBySection to nil i.e. no configmap is mounted
+***********************[0;36mStart Processing - parseSettingsForPodAnnotations[0m***********************
+configmap section not mounted, using defaults
+***********************[0;36mStart Processing - parsePrometheusCollectorConfig[0m***********************
+Configure:Print the value of AZMON_AGENT_CFG_SCHEMA_VERSION: v1
+AZMON_CLUSTER_ALIAS: ''
+AZMON_CLUSTER_LABEL: auto-aks
+***********************[0;36mEnd Processing - parsePrometheusCollectorConfig[0m***********************
+***********************[0;36mStart Processing - parseDefaultScrapeSettings[0m***********************
+Start prometheus-collector-settings Processing
+Using configmap for default scrape settings...
+config::Using scrape settings for kubelet: true
+config::Using scrape settings for coredns: false
+config::Using scrape settings for cadvisor: true
+config::Using scrape settings for kubeproxy: false
+config::Using scrape settings for apiserver: false
+config::Using scrape settings for kubestate: true
+config::Using scrape settings for nodeexporter: true
+config::Using scrape settings for prometheuscollectorhealth: false
+config::Using scrape settings for windowsexporter: false
+config::Using scrape settings for windowskubeproxy: false
+config::Using scrape settings for kappiebasic: true
+config::Using scrape settings for networkobservabilityRetina: true
+config::Using scrape settings for networkobservabilityHubble: true
+config::Using scrape settings for networkobservabilityCilium: true
+config:: Using scrape settings for acstor-capacity-provisioner: true
+config:: Using scrape settings for acstor-metrics-exporter: true
+After replacing non-alpha-numeric characters with '_': auto_aks
+End prometheus-collector-settings Processing
+***********************[0;36mEnd Processing - parseDefaultScrapeSettings[0m***********************
+***********************[0;36mStart Processing - parseDebugModeSettings[0m***********************
+[0;31mconfigmap section not mounted, using defaults[0m
+***********************[0;36mStart Processing - tomlparserTargetsMetricsKeepList[0m***********************
+***********************[0;36mEnd Processing - tomlparserTargetsMetricsKeepList[0m***********************
+***********************[0;36mStart Processing - tomlparserScrapeInterval[0m***********************
+***********************[0;36mEnd Processing - tomlparserScrapeInterval[0m***********************
+***********************[0;36mStart Processing - prometheusConfigMerger[0m***********************
+[0;33mCustom prometheus config does not exist, using only default scrape targets if they are enabled[0m
+Updating scrape interval config for kubestateDefault.yml
+scrapeInterval 30s
+Starting to append keep list regex or minimal ingestion regex to kubestateDefault.yml
+Updating scrape interval config for acstorCapacityProvisionerDefaultFile.yml
+2025/07/24 16:17:47 path acstorCapacityProvisionerDefaultFile: acstorCapacityProvisionerDefaultFile.yml
+scrapeInterval 30s
+Starting to append keep list regex or minimal ingestion regex to acstorCapacityProvisionerDefaultFile.yml
+Updating scrape interval config for acstorMetricsExporterDefaultFile.yml
+2025/07/24 16:17:47 path acstorMetricsExporterDefaultFile: acstorMetricsExporterDefaultFile.yml
+scrapeInterval 30s
+Starting to append keep list regex or minimal ingestion regex to acstorMetricsExporterDefaultFile.yml
+Done merging 3 default prometheus config(s)
+Starting to merge default prometheus config values in collector template as backup
+***********************[0;36mEnd Processing - prometheusConfigMerger, Done Writing Default Prometheus Config[0m***********************
+[0;36mAZMON_INVALID_CUSTOM_PROMETHEUS_CONFIG[0m=false
+[0;36mCONFIG_VALIDATOR_RUNNING_IN_AGENT[0m=true
+prom-config-validator::No custom prometheus config found. Only using default scrape configs
+prom-config-validator::Config file provided - /opt/defaultsMergedConfig.yml
+prom-config-validator::Successfully generated otel config
+prom-config-validator::Loading configuration...
+prom-config-validator::Successfully loaded and validated prometheus config
+prom-config-validator::Prometheus default scrape config validation succeeded, using this as collector config
+[0;36mAZMON_USE_DEFAULT_PROMETHEUS_CONFIG[0m=true
+prom-config-validator::Use default prometheus config: true
+AZMON_OPERATOR_HTTPS_ENABLED is not set/false or error in cert creation, not setting tls config in TargetAllocator
+2025/07/24 16:17:47 Updated file - targetallocator.yaml for the TargetAllocator to pick up new config changes
+==== END logs for container config-reader of pod kube-system/ama-metrics-operator-targets-65458d648b-hwfgp ====

@@ -1,0 +1,11 @@
+==== START logs for container cloud-node-manager of pod kube-system/cloud-node-manager-fdlmz ====
+W0724 16:12:35.534947       1 client_config.go:667] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+I0724 16:12:35.535537       1 nodemanager.go:98] Version: v1.32.5
+I0724 16:12:35.535548       1 nodemanager.go:99] NodeName: aks-systempool-67290672-vmss000002
+I0724 16:12:35.536365       1 azure.go:421] "Setting up ARM client factory for network resources" subscriptionID=""
+I0724 16:12:35.536794       1 azure.go:429] "Setting up ARM client factory for compute resources" subscriptionID=""
+I0724 16:12:35.536918       1 nodemanager.go:147] Sending events to api server.
+I0724 16:12:35.537220       1 nodemanager.go:143] Started cloud-node-manager
+I0724 16:12:35.555533       1 nodemanager.go:368] Initializing node aks-systempool-67290672-vmss000002 with cloud provider
+I0724 16:12:35.624314       1 nodemanager.go:431] Successfully initialized node aks-systempool-67290672-vmss000002 with cloud provider
+==== END logs for container cloud-node-manager of pod kube-system/cloud-node-manager-fdlmz ====

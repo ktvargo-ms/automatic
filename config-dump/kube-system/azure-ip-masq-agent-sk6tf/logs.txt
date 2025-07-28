@@ -1,0 +1,97 @@
+==== START logs for container azure-ip-masq-agent of pod kube-system/azure-ip-masq-agent-sk6tf ====
+Detected alternatives style: azlinux3
+I0724 16:12:35.491365       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:12:35.491545       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:13:35.508138       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:13:35.508268       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:14:35.536525       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:14:35.536801       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:15:35.558576       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:15:35.558802       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:16:35.594527       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:16:35.594674       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:17:35.618612       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:17:35.618768       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:18:35.638574       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:18:35.638728       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:19:35.662605       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:19:35.662779       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:20:35.686584       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:20:35.686725       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:21:35.710470       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:21:35.710636       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:22:35.737751       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:22:35.737908       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:23:35.770547       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:23:35.770673       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:24:35.789727       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:24:35.789857       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:25:35.822216       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:25:35.822361       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:26:35.869872       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:26:35.870022       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:27:35.906052       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:27:35.906241       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:28:35.930249       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:28:35.930410       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:29:35.962505       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:29:35.962660       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:30:36.009923       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:30:36.010060       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:31:36.034161       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:31:36.034279       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:32:36.074093       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:32:36.074232       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:33:36.121990       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:33:36.122142       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:34:36.145721       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:34:36.145886       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:35:36.174324       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:35:36.174488       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:36:36.201687       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:36:36.201826       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:37:36.226391       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:37:36.226541       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:38:36.254146       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:38:36.254310       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:39:36.278533       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:39:36.278665       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:40:36.306337       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:40:36.306496       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:41:36.342187       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:41:36.342317       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:42:36.369996       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:42:36.370162       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:43:36.398397       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:43:36.398536       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:44:36.422500       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:44:36.422677       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:45:36.453765       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:45:36.453910       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:46:36.473919       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:46:36.474128       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:47:36.505773       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:47:36.505927       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:48:36.530259       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:48:36.530473       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:49:36.558340       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:49:36.558466       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:50:36.585829       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:50:36.586020       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:51:36.610738       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:51:36.611035       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:52:36.637933       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:52:36.638111       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:53:36.665605       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:53:36.665732       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:54:36.686242       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:54:36.686465       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:55:36.710692       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:55:36.711005       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:56:36.741805       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:56:36.742077       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:57:36.774004       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:57:36.774135       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+I0724 16:58:36.798174       1 ip-masq-agent.go:211] syncing config file "ip-masq-agent-reconciled" at "/etc/config/"
+I0724 16:58:36.798494       1 ip-masq-agent.go:199] using config: {"nonMasqueradeCIDRs":["10.244.0.0/16"],"masqLinkLocal":true,"masqLinkLocalIPv6":false}
+==== END logs for container azure-ip-masq-agent of pod kube-system/azure-ip-masq-agent-sk6tf ====

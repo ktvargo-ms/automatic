@@ -1,0 +1,24 @@
+==== START logs for container recommender of pod kube-system/vpa-recommender-7b59697445-tvp6s ====
+I0724 16:13:55.349147       1 controller_fetcher.go:141] Initial sync of DaemonSet completed
+I0724 16:13:55.450072       1 controller_fetcher.go:141] Initial sync of Deployment completed
+I0724 16:13:55.550810       1 controller_fetcher.go:141] Initial sync of ReplicaSet completed
+I0724 16:13:55.650955       1 controller_fetcher.go:141] Initial sync of StatefulSet completed
+I0724 16:13:55.751508       1 controller_fetcher.go:141] Initial sync of ReplicationController completed
+I0724 16:13:55.852521       1 controller_fetcher.go:141] Initial sync of Job completed
+I0724 16:13:55.953587       1 controller_fetcher.go:141] Initial sync of CronJob completed
+I0724 16:13:56.054047       1 api.go:94] Initial VPA synced successfully
+I0724 16:13:56.054160       1 fetcher.go:99] Initial sync of DaemonSet completed
+I0724 16:13:56.054173       1 fetcher.go:99] Initial sync of Deployment completed
+I0724 16:13:56.054178       1 fetcher.go:99] Initial sync of ReplicaSet completed
+I0724 16:13:56.054182       1 fetcher.go:99] Initial sync of StatefulSet completed
+I0724 16:13:56.054186       1 fetcher.go:99] Initial sync of ReplicationController completed
+I0724 16:13:56.054190       1 fetcher.go:99] Initial sync of Job completed
+I0724 16:13:56.054196       1 fetcher.go:99] Initial sync of CronJob completed
+W0724 16:13:56.054244       1 shared_informer.go:459] The sharedIndexInformer has started, run more than once is not allowed
+W0724 16:13:56.054275       1 shared_informer.go:459] The sharedIndexInformer has started, run more than once is not allowed
+W0724 16:13:56.054275       1 shared_informer.go:459] The sharedIndexInformer has started, run more than once is not allowed
+W0724 16:13:56.054297       1 shared_informer.go:459] The sharedIndexInformer has started, run more than once is not allowed
+W0724 16:13:56.054306       1 shared_informer.go:459] The sharedIndexInformer has started, run more than once is not allowed
+W0724 16:13:56.054312       1 shared_informer.go:459] The sharedIndexInformer has started, run more than once is not allowed
+W0724 16:13:56.054316       1 shared_informer.go:459] The sharedIndexInformer has started, run more than once is not allowed
+==== END logs for container recommender of pod kube-system/vpa-recommender-7b59697445-tvp6s ====

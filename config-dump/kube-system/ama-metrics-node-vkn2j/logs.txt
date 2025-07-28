@@ -1,0 +1,207 @@
+==== START logs for container prometheus-collector of pod kube-system/ama-metrics-node-vkn2j ====
+Starting inotify for watching config map update
+Starting inotify for watching config map update
+[0;36mMODE[0m=advanced
+[0;36mCONTROLLER_TYPE[0m=DaemonSet
+[0;36mCLUSTER[0m=/subscriptions/eaef3242-e7b0-4641-810e-5d0fcc149659/resourceGroups/arc-test-kv/providers/Microsoft.ContainerService/managedClusters/auto-aks
+Setting telemetry output to the default azurepubliccloud instance
+[0;36mhttp_proxy[0m=
+[0;36mHTTP_PROXY[0m=
+[0;36mhttps_proxy[0m=
+[0;36mHTTPS_PROXY[0m=
+[0;36mNO_PROXY[0m=,ama-metrics-operator-targets.kube-system.svc.cluster.local
+[0;36mno_proxy[0m=,ama-metrics-operator-targets.kube-system.svc.cluster.local
+[0;36mHTTP_PROXY_ENABLED[0m=false
+[0;36mAZMON_AGENT_CFG_FILE_VERSION[0m=ver1
+[0;36mAZMON_AGENT_CFG_SCHEMA_VERSION[0m=v1
+Config version file not found. Setting metricsConfigBySection to nil i.e. no configmap is mounted
+***********************[0;36mStart Processing - parseSettingsForPodAnnotations[0m***********************
+configmap section not mounted, using defaults
+***********************[0;36mStart Processing - parsePrometheusCollectorConfig[0m***********************
+Configure:Print the value of AZMON_AGENT_CFG_SCHEMA_VERSION: v1
+AZMON_CLUSTER_ALIAS: ''
+AZMON_CLUSTER_LABEL: auto-aks
+***********************[0;36mEnd Processing - parsePrometheusCollectorConfig[0m***********************
+***********************[0;36mStart Processing - parseDefaultScrapeSettings[0m***********************
+Start prometheus-collector-settings Processing
+Using configmap for default scrape settings...
+config::Using scrape settings for kubelet: true
+config::Using scrape settings for coredns: false
+config::Using scrape settings for cadvisor: true
+config::Using scrape settings for kubeproxy: false
+config::Using scrape settings for apiserver: false
+config::Using scrape settings for kubestate: true
+config::Using scrape settings for nodeexporter: true
+config::Using scrape settings for prometheuscollectorhealth: false
+config::Using scrape settings for windowsexporter: false
+config::Using scrape settings for windowskubeproxy: false
+config::Using scrape settings for kappiebasic: true
+config::Using scrape settings for networkobservabilityRetina: true
+config::Using scrape settings for networkobservabilityHubble: true
+config::Using scrape settings for networkobservabilityCilium: true
+config:: Using scrape settings for acstor-capacity-provisioner: true
+config:: Using scrape settings for acstor-metrics-exporter: true
+After replacing non-alpha-numeric characters with '_': auto_aks
+End prometheus-collector-settings Processing
+***********************[0;36mEnd Processing - parseDefaultScrapeSettings[0m***********************
+***********************[0;36mStart Processing - parseDebugModeSettings[0m***********************
+[0;31mconfigmap section not mounted, using defaults[0m
+***********************[0;36mStart Processing - tomlparserTargetsMetricsKeepList[0m***********************
+***********************[0;36mEnd Processing - tomlparserTargetsMetricsKeepList[0m***********************
+***********************[0;36mStart Processing - tomlparserScrapeInterval[0m***********************
+***********************[0;36mEnd Processing - tomlparserScrapeInterval[0m***********************
+***********************[0;36mStart Processing - prometheusConfigMerger[0m***********************
+[0;33mCustom prometheus config does not exist, using only default scrape targets if they are enabled[0m
+Updating scrape interval config for kubeletDefaultDs.yml
+scrapeInterval 30s
+Starting to append keep list regex or minimal ingestion regex to kubeletDefaultDs.yml
+Updating scrape interval config for cadvisorDefaultDs.yml
+scrapeInterval 30s
+Starting to append keep list regex or minimal ingestion regex to cadvisorDefaultDs.yml
+Updating scrape interval config for nodeexporterDefaultDs.yml
+scrapeInterval 30s
+Starting to append keep list regex or minimal ingestion regex to nodeexporterDefaultDs.yml
+Updating scrape interval config for kappieBasicDefaultDs.yml
+scrapeInterval 30s
+Starting to append keep list regex or minimal ingestion regex to kappieBasicDefaultDs.yml
+Updating scrape interval config for networkobservabilityRetinaDefaultDs.yml
+scrapeInterval 30s
+Starting to append keep list regex or minimal ingestion regex to networkobservabilityRetinaDefaultDs.yml
+Updating scrape interval config for networkobservabilityHubbleDefaultDs.yml
+scrapeInterval 30s
+Starting to append keep list regex or minimal ingestion regex to networkobservabilityHubbleDefaultDs.yml
+Updating scrape interval config for networkobservabilityCiliumDefaultDs.yml
+scrapeInterval 30s
+Starting to append keep list regex or minimal ingestion regex to networkobservabilityCiliumDefaultDs.yml
+Done merging 7 default prometheus config(s)
+Starting to merge default prometheus config values in collector template as backup
+***********************[0;36mEnd Processing - prometheusConfigMerger, Done Writing Default Prometheus Config[0m***********************
+[0;36mAZMON_INVALID_CUSTOM_PROMETHEUS_CONFIG[0m=false
+[0;36mCONFIG_VALIDATOR_RUNNING_IN_AGENT[0m=true
+prom-config-validator::No custom prometheus config found. Only using default scrape configs
+prom-config-validator::Config file provided - /opt/defaultsMergedConfig.yml
+prom-config-validator::Successfully generated otel config
+prom-config-validator::Loading configuration...
+prom-config-validator::Successfully loaded and validated prometheus config
+prom-config-validator::Prometheus default scrape config validation succeeded, using this as collector config
+[0;36mAZMON_USE_DEFAULT_PROMETHEUS_CONFIG[0m=true
+prom-config-validator::Use default prometheus config: true
+meConfigFile: /usr/sbin/me_ds.config
+fluentBitConfigFile: /opt/fluent-bit/fluent-bit-daemonset.yaml
+2025/07/24 16:17:38 checking health of token adapter after 1 secs
+2025/07/24 16:17:38 found token adapter to be healthy after 1 secs
+2025/07/24 16:17:38 export tokenadapterHealthyAfterSecs=1
+[0;36mME_CONFIG_FILE[0m=/usr/sbin/me_ds.config
+[0;36mcustomResourceId[0m=/subscriptions/eaef3242-e7b0-4641-810e-5d0fcc149659/resourceGroups/arc-test-kv/providers/Microsoft.ContainerService/managedClusters/auto-aks
+[0;36mcustomRegion[0m=westus3
+Waiting for 10s for token adapter sidecar to be up and running so that it can start serving IMDS requests
+Starting MDSD
+1.30.3
+MDSD_VERSION=""
+Waiting for 30s for MDSD to get the config and put them in place for ME
+Starting Metrics Extension with config overrides
+Starting otelcollector with only default scrape configs enabled
+startCommand otelcollector
+startCommand prometheusui
+ME_VERSION="2.2025.123.2222-1.cm2
+"
+GOLANG_VERSION="go version go1.23.10 linux/amd64
+"
+OTELCOLLECTOR_VERSION="custom-collector-distro version 0.127.0
+"
+PROMETHEUS_VERSION="3.2.1"
+Starting fluent-bit
+[0;36mFLUENT_BIT_OPERATOR_TARGETS_TLS_SETTING[0m=off
+[0;36mFLUENT_BIT_OPERATOR_TARGETS_PROMETHEUS_PORT[0m=80
+[0;36mFLUENT_BIT_VERSION[0m=Fluent Bit v3.2.2
+Git commit: 
+
+Starting inotify for watching mdsd config update
+AZMON_CONTAINER_START_TIME=1753373900
+AZMON_CONTAINER_START_TIME_READABLE="2025-07-24T16:18:20Z"
+File Doesnt Exist. Creating file...
+Fluent Bit v3.2.2
+* Copyright (C) 2015-2024 The Fluent Bit Authors
+* Fluent Bit is a CNCF sub-project under the umbrella of Fluentd
+* https://fluentbit.io
+
+______ _                  _    ______ _ _           _____  _____ 
+|  ___| |                | |   | ___ (_) |         |____ |/ __  \
+| |_  | |_   _  ___ _ __ | |_  | |_/ /_| |_  __   __   / /`' / /'
+|  _| | | | | |/ _ \ '_ \| __| | ___ \ | __| \ \ / /   \ \  / /  
+| |   | | |_| |  __/ | | | |_  | |_/ / | |_   \ V /.___/ /./ /___
+\_|   |_|\__,_|\___|_| |_|\__| \____/|_|\__|   \_/ \____(_)_____/
+
+
+[2025/07/24 16:18:20] [ info] Configuration:
+[2025/07/24 16:18:20] [ info]  flush time     | 15.000000 seconds
+[2025/07/24 16:18:20] [ info]  grace          | 5 seconds
+[2025/07/24 16:18:20] [ info]  daemon         | 0
+[2025/07/24 16:18:20] [ info] ___________
+[2025/07/24 16:18:20] [ info]  inputs:
+[2025/07/24 16:18:20] [ info]      tail
+[2025/07/24 16:18:20] [ info]      tail
+[2025/07/24 16:18:20] [ info]      tail
+[2025/07/24 16:18:20] [ info]      tail
+[2025/07/24 16:18:20] [ info]      tail
+[2025/07/24 16:18:20] [ info]      tail
+[2025/07/24 16:18:20] [ info]      tail
+[2025/07/24 16:18:20] [ info]      tail
+[2025/07/24 16:18:20] [ info]      tail
+[2025/07/24 16:18:20] [ info]      prometheus_scrape
+[2025/07/24 16:18:20] [ info]      prometheus_scrape
+[2025/07/24 16:18:20] [ info] ___________
+[2025/07/24 16:18:20] [ info]  filters:
+[2025/07/24 16:18:20] [ info]      rewrite_tag.0
+[2025/07/24 16:18:20] [ info]      rewrite_tag.1
+[2025/07/24 16:18:20] [ info]      rewrite_tag.2
+[2025/07/24 16:18:20] [ info]      rewrite_tag.3
+[2025/07/24 16:18:20] [ info]      rewrite_tag.4
+[2025/07/24 16:18:20] [ info]      grep.5
+[2025/07/24 16:18:20] [ info]      grep.6
+[2025/07/24 16:18:20] [ info]      grep.7
+[2025/07/24 16:18:20] [ info] ___________
+[2025/07/24 16:18:20] [ info]  outputs:
+[2025/07/24 16:18:20] [ info]      appinsights.0
+[2025/07/24 16:18:20] [ info]      stdout.1
+[2025/07/24 16:18:20] [ info]      stdout.2
+[2025/07/24 16:18:20] [ info]      stdout.3
+[2025/07/24 16:18:20] [ info]      stdout.4
+[2025/07/24 16:18:20] [ info] ___________
+[2025/07/24 16:18:20] [ info]  collectors:
+Starting process aggregations
+pids: [182 183]
+pids: [181]
+{"time":"2025-07-24T16:50:53.014","level":"Error","message":"TID:126775479952960\tAggregatedMetricsPublisher\t_Default[msprom-westus3-auto-aks-ab5n.westus3-1.metrics.ingest.monitor.azure.com]\tAggregatedMetricsPublisher.cpp(1216)\tMetrics data publication failed with an HTTP exception after receiving a server response. PublicationEndpoint: \"https://msprom-westus3-auto-aks-ab5n.westus3-1.metrics.ingest.monitor.azure.com/dataCollectionRules/dcr-4f488d7d859148d3876aed74c26e2d76/streams/Microsoft-PrometheusMetrics?api-version=2021-11-01-preview[msprom-westus3-auto-aks-ab5n.westus3-1.metrics.ingest.monitor.azure.com]\", SentMetricCount: 2836, SentPacketSize(bytes): 30452, Trace GUID: \"{c5b0e1cd-5b88-4bae-accc-7fac00e32c49}\", HandlingServer: \"Unknown\", AuthContext: \"BearerToken:FromMemory1\", ProxyServer: \"\", TaskCancelled: false, RequestStartTime: 2025-07-24T16:50:53.012, TaskTime: 2025-07-24T16:55:53.012, Exception: \"Failed to write request headers\"","filepath":"/MetricsExtensionConsoleDebugLog.log"}
+==== END logs for container prometheus-collector of pod kube-system/ama-metrics-node-vkn2j ====
+==== START logs for container addon-token-adapter of pod kube-system/ama-metrics-node-vkn2j ====
+2025/07/24 16:17:36 cmd.go:141: successfully setting up iptable rules for nat
+2025/07/24 16:17:36 utils.go:35: received event type ADDED
+2025/07/24 16:17:49 handlers.go:57: received token request, handling...
+2025/07/24 16:18:19 handlers.go:57: received token request, handling...
+2025/07/24 16:18:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:18:56 utils.go:30: watch channel is closed, retrying...
+2025/07/24 16:18:56 utils.go:35: received event type ADDED
+2025/07/24 16:19:11 utils.go:30: watch channel is closed, retrying...
+2025/07/24 16:19:11 utils.go:35: received event type ADDED
+2025/07/24 16:20:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:22:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:24:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:26:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:28:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:30:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:32:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:34:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:36:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:38:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:40:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:42:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:44:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:46:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:48:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:50:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:52:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:54:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:56:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:58:40 utils.go:35: received event type MODIFIED
+==== END logs for container addon-token-adapter of pod kube-system/ama-metrics-node-vkn2j ====

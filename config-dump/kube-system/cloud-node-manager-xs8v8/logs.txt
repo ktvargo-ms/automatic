@@ -1,0 +1,11 @@
+==== START logs for container cloud-node-manager of pod kube-system/cloud-node-manager-xs8v8 ====
+W0724 16:12:35.441533       1 client_config.go:667] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+I0724 16:12:35.442230       1 nodemanager.go:98] Version: v1.32.5
+I0724 16:12:35.442289       1 nodemanager.go:99] NodeName: aks-systempool-67290672-vmss000001
+I0724 16:12:35.443028       1 azure.go:421] "Setting up ARM client factory for network resources" subscriptionID=""
+I0724 16:12:35.443266       1 azure.go:429] "Setting up ARM client factory for compute resources" subscriptionID=""
+I0724 16:12:35.443377       1 nodemanager.go:147] Sending events to api server.
+I0724 16:12:35.443650       1 nodemanager.go:143] Started cloud-node-manager
+I0724 16:12:35.461182       1 nodemanager.go:368] Initializing node aks-systempool-67290672-vmss000001 with cloud provider
+I0724 16:12:35.527767       1 nodemanager.go:431] Successfully initialized node aks-systempool-67290672-vmss000001 with cloud provider
+==== END logs for container cloud-node-manager of pod kube-system/cloud-node-manager-xs8v8 ====

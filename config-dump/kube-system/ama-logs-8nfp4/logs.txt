@@ -1,0 +1,169 @@
+==== START logs for container addon-token-adapter of pod kube-system/ama-logs-8nfp4 ====
+2025/07/24 16:18:00 utils.go:35: received event type ADDED
+2025/07/24 16:18:00 cmd.go:141: successfully setting up iptable rules for nat
+2025/07/24 16:18:10 handlers.go:57: received token request, handling...
+2025/07/24 16:18:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:18:56 utils.go:30: watch channel is closed, retrying...
+2025/07/24 16:18:56 utils.go:35: received event type ADDED
+2025/07/24 16:19:27 utils.go:30: watch channel is closed, retrying...
+2025/07/24 16:19:28 utils.go:35: received event type ADDED
+2025/07/24 16:20:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:22:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:24:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:26:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:28:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:30:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:32:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:34:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:36:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:38:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:40:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:42:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:44:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:46:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:48:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:50:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:52:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:54:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:55:55 utils.go:30: watch channel is closed, retrying...
+2025/07/24 16:55:55 utils.go:35: received event type ADDED
+2025/07/24 16:56:40 utils.go:35: received event type MODIFIED
+2025/07/24 16:58:40 utils.go:35: received event type MODIFIED
+==== END logs for container addon-token-adapter of pod kube-system/ama-logs-8nfp4 ====
+==== START logs for container ama-logs of pod kube-system/ama-logs-8nfp4 ====
+startup script start @ 2025-07-24T16:18:08
+customResourceId:/subscriptions/eaef3242-e7b0-4641-810e-5d0fcc149659/resourceGroups/arc-test-kv/providers/Microsoft.ContainerService/managedClusters/auto-aks
+customRegion:westus3
+****************Start Config Processing********************
+****************Start Config Processing********************
+****************Start NPM & subnet ip usage integrations Config Processing********************
+config::integrations::Successfully substituted the placeholders for integrations into /etc/opt/microsoft/docker-cimprov/telegraf.conf file for DaemonSet
+config::integrations::Successfully substituted the integrations placeholders into /etc/opt/microsoft/docker-cimprov/telegraf.conf file for DaemonSet
+Making curl request to oms endpint with domain: opinsights.azure.com
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl request to oms endpoint succeeded.
+setCloudSpecificApplicationInsightsConfig: Cloud environment: azurepubliccloud
+default is Public cloud
+Azure mdsd: 1.35.1-960
+telegraf 1.34.3-1.cm2
+DOCKER_CIMPROV_VERSION=18.0.1-0
+Fluent Bit v3.0.6
+Git commit: 
+fluentd 1.16.3
+MARINER VERSION="2.0.20250429"
+****************Start Config Processing********************
+Both stdout & stderr log collection are turned off for namespaces: '*_kube-system_*.log' 
+****************End Config Processing********************
+****************Start Agent Integrations Config Processing********************
+config::Starting to substitute the placeholders in fluent-bit.conf file for log collection
+config::Successfully substituted the placeholders in fluent-bit.conf file
+config::Starting to substitute the placeholders in fluent-bit-common.conf file for log collection
+config::Successfully substituted the placeholders in fluent-bit-common.conf file
+****************Start Prometheus Config Processing********************
+config::No configmap mounted for prometheus custom config, using defaults
+****************End Prometheus Config Processing********************
+****************Start MDM Metrics Config Processing********************
+****************End MDM Metrics Config Processing********************
+****************Start Metric Collection Settings Processing********************
+****************End Metric Collection Settings Processing********************
+MUTE_PROM_SIDECAR = false
+Making wget request to cadvisor endpoint with port 10250
+Using port 10250
+Making curl request to cadvisor endpoint /pods with port 10250 to get the configured container runtime on kubelet
+configured container runtime on kubelet is : containerd
+set caps for ruby process to read container env from proc
+aks-systempool-67290672-vmss000002
+*** setting up oneagent in aad auth msi mode ***
+Container limit in bytes: 1073741824
+Setting MDSD backpressure threshold as 50 percent of container limit: 512 MB
+SYSLOG_HOST_PORT is 28330. No changes made.
+starting mdsd in main container...
+enabling syslog listener for mdsd in main container
+setting up cronjob for ci agent log rotation
+Onboarding success
+*** starting fluentd v1 in daemonset
+starting fluent-bit and setting telegraf conf file for daemonset
+using fluentbitconf file: fluent-bit.conf for fluent-bit
+since container run time is containerd update the container log fluentbit Parser to cri from docker
+nodename: aks-systempool-67290672-vmss000002
+replacing nodename in telegraf config
+checking for listener on tcp #25226 and waiting for 45 secs if not..
+File Doesnt Exist. Creating file...
+Fluent Bit v3.0.6
+* Copyright (C) 2015-2024 The Fluent Bit Authors
+* Fluent Bit is a CNCF sub-project under the umbrella of Fluentd
+* https://fluentbit.io
+
+___________.__                        __    __________.__  __          ________  
+\_   _____/|  |  __ __   ____   _____/  |_  \______   \__|/  |_  ___  _\_____  \ 
+ |    __)  |  | |  |  \_/ __ \ /    \   __\  |    |  _/  \   __\ \  \/ / _(__  < 
+ |     \   |  |_|  |  /\  ___/|   |  \  |    |    |   \  ||  |    \   / /       \
+ \___  /   |____/____/  \___  >___|  /__|    |______  /__||__|     \_/ /______  /
+     \/                     \/     \/               \/                        \/ 
+
+Routing container logs thru v2 route... 
+waitforlisteneronTCPport found listener on port:25226 in 1 secs
+startup script took: 13 seconds
+startup script end @ 2025-07-24T16:18:21
+2025-07-24T16:18:21Z I! Loading config: /etc/opt/microsoft/docker-cimprov/telegraf.conf
+2025-07-24T16:18:21Z W! DeprecationWarning: Option "fieldpass" of plugin "inputs.disk" deprecated since version 1.29.0 and will be removed in 1.40.0: use 'fieldinclude' instead
+2025-07-24T16:18:21Z W! DeprecationWarning: Option "fieldpass" of plugin "inputs.diskio" deprecated since version 1.29.0 and will be removed in 1.40.0: use 'fieldinclude' instead
+2025-07-24T16:18:21Z W! DeprecationWarning: Option "fieldpass" of plugin "inputs.net" deprecated since version 1.29.0 and will be removed in 1.40.0: use 'fieldinclude' instead
+2025-07-24T16:18:21Z W! DeprecationWarning: Option "fieldpass" of plugin "inputs.prometheus" deprecated since version 1.29.0 and will be removed in 1.40.0: use 'fieldinclude' instead
+2025-07-24T16:18:21Z W! DeprecationWarning: Option "fieldpass" of plugin "inputs.prometheus" deprecated since version 1.29.0 and will be removed in 1.40.0: use 'fieldinclude' instead
+==== END logs for container ama-logs of pod kube-system/ama-logs-8nfp4 ====
+==== START logs for container ama-logs-prometheus of pod kube-system/ama-logs-8nfp4 ====
+startup script start @ 2025-07-24T16:18:08
+customResourceId:/subscriptions/eaef3242-e7b0-4641-810e-5d0fcc149659/resourceGroups/arc-test-kv/providers/Microsoft.ContainerService/managedClusters/auto-aks
+customRegion:westus3
+****************Start Config Processing********************
+Making curl request to oms endpint with domain: opinsights.azure.com
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl request to oms endpoint succeeded.
+setCloudSpecificApplicationInsightsConfig: Cloud environment: azurepubliccloud
+default is Public cloud
+Azure mdsd: 1.35.1-960
+telegraf 1.34.3-1.cm2
+DOCKER_CIMPROV_VERSION=18.0.1-0
+Fluent Bit v3.0.6
+Git commit: 
+fluentd 1.16.3
+MARINER VERSION="2.0.20250429"
+****************Start Agent Integrations Config Processing********************
+config::Starting to substitute the placeholders in fluent-bit.conf file for log collection
+config::Successfully substituted the placeholders in fluent-bit.conf file
+config::Starting to substitute the placeholders in fluent-bit-common.conf file for log collection
+config::Successfully substituted the placeholders in fluent-bit-common.conf file
+****************Start Prometheus Config Processing********************
+config::No configmap mounted for prometheus custom config, using defaults
+****************End Prometheus Config Processing********************
+****************Start Sidecar Agent Config Processing********************
+****************Start OSM Config Processing********************
+config::No configmap mounted for OSM config, using defaults
+****************End OSM Config Processing********************
+MUTE_PROM_SIDECAR = true
+Making wget request to cadvisor endpoint with port 10250
+Using port 10250
+Making curl request to cadvisor endpoint /pods with port 10250 to get the configured container runtime on kubelet
+configured container runtime on kubelet is : containerd
+set caps for ruby process to read container env from proc
+aks-systempool-67290672-vmss000002
+*** setting up oneagent in aad auth msi mode ***
+Container limit in bytes: 1073741824
+Setting MDSD backpressure threshold as 50 percent of container limit: 512 MB
+SYSLOG_HOST_PORT is 28330. No changes made.
+not starting mdsd (no metrics to scrape since MUTE_PROM_SIDECAR is true)
+setting up cronjob for ci agent log rotation
+not checking onboarding status (no metrics to scrape since MUTE_PROM_SIDECAR is true)
+not starting fluent-bit in prometheus sidecar (no metrics to scrape since MUTE_PROM_SIDECAR is true)
+nodename: aks-systempool-67290672-vmss000002
+replacing nodename in telegraf config
+no metrics to scrape since MUTE_PROM_SIDECAR is true, not checking for listener on tcp #25229
+not starting telegraf (no metrics to scrape since MUTE_PROM_SIDECAR is true)
+startup script took: 2 seconds
+startup script end @ 2025-07-24T16:18:10
+==== END logs for container ama-logs-prometheus of pod kube-system/ama-logs-8nfp4 ====

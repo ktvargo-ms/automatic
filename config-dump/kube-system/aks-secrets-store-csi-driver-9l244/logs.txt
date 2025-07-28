@@ -1,0 +1,28 @@
+==== START logs for container node-driver-registrar of pod kube-system/aks-secrets-store-csi-driver-9l244 ====
+I0724 16:13:34.563258       1 main.go:150] "Version" version="v2.11.1-0-gd03f8209"
+I0724 16:13:34.563374       1 main.go:151] "Running node-driver-registrar" mode=""
+I0724 16:13:34.563380       1 main.go:172] "Attempting to open a gRPC connection" csiAddress="/csi/csi.sock"
+I0724 16:13:38.406714       1 main.go:180] "Calling CSI driver to discover driver name"
+I0724 16:13:38.409716       1 main.go:189] "CSI driver name" csiDriverName="secrets-store.csi.k8s.io"
+I0724 16:13:38.409749       1 node_register.go:56] "Starting Registration Server" socketPath="/registration/secrets-store.csi.k8s.io-reg.sock"
+I0724 16:13:38.414089       1 node_register.go:66] "Registration Server started" socketPath="/registration/secrets-store.csi.k8s.io-reg.sock"
+I0724 16:13:38.414282       1 node_register.go:96] "Skipping HTTP server"
+I0724 16:13:38.731003       1 main.go:96] "Received GetInfo call" request="&InfoRequest{}"
+I0724 16:13:38.757603       1 main.go:108] "Received NotifyRegistrationStatus call" status="&RegistrationStatus{PluginRegistered:true,Error:,}"
+==== END logs for container node-driver-registrar of pod kube-system/aks-secrets-store-csi-driver-9l244 ====
+==== START logs for container secrets-store of pod kube-system/aks-secrets-store-csi-driver-9l244 ====
+I0724 16:13:37.384938       1 exporter.go:35] "initializing metrics backend" backend="prometheus"
+I0724 16:13:37.585964       1 main.go:195] "starting manager\n"
+I0724 16:13:37.687585       1 secrets-store.go:46] "Initializing Secrets Store CSI Driver" driver="secrets-store.csi.k8s.io" version="1.5.0" buildTime="2025-04-14-19:33"
+I0724 16:13:37.687686       1 reconciler.go:143] "starting rotation reconciler" rotationPollInterval="2m0s"
+I0724 16:13:37.690243       1 server.go:126] "Listening for connections" address="//csi/csi.sock"
+I0724 16:13:38.731989       1 nodeserver.go:359] "node: getting default node info\n"
+I0724 16:18:24.907445       1 streamwatcher.go:111] "Unexpected EOF during watch stream event decoding: unexpected EOF\n"
+I0724 16:18:24.907555       1 streamwatcher.go:111] "Unexpected EOF during watch stream event decoding: unexpected EOF\n"
+I0724 16:18:24.907705       1 streamwatcher.go:111] "Unexpected EOF during watch stream event decoding: unexpected EOF\n"
+==== END logs for container secrets-store of pod kube-system/aks-secrets-store-csi-driver-9l244 ====
+==== START logs for container liveness-probe of pod kube-system/aks-secrets-store-csi-driver-9l244 ====
+I0724 16:13:40.182949       1 main.go:135] "Calling CSI driver to discover driver name"
+I0724 16:13:40.282838       1 main.go:143] "CSI driver name" driver="secrets-store.csi.k8s.io"
+I0724 16:13:40.282884       1 main.go:172] "ServeMux listening" address="0.0.0.0:9808"
+==== END logs for container liveness-probe of pod kube-system/aks-secrets-store-csi-driver-9l244 ====

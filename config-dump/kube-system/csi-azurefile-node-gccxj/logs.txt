@@ -1,0 +1,71 @@
+==== START logs for container liveness-probe of pod kube-system/csi-azurefile-node-gccxj ====
+I0724 16:12:43.468421       1 main.go:135] "Calling CSI driver to discover driver name"
+I0724 16:12:43.470091       1 main.go:143] "CSI driver name" driver="file.csi.azure.com"
+I0724 16:12:43.470121       1 main.go:172] "ServeMux listening" address="0.0.0.0:29613"
+==== END logs for container liveness-probe of pod kube-system/csi-azurefile-node-gccxj ====
+==== START logs for container node-driver-registrar of pod kube-system/csi-azurefile-node-gccxj ====
+I0724 16:12:36.488161       1 main.go:150] "Version" version="v2.13.0-0-g9b41324b"
+I0724 16:12:36.488230       1 main.go:151] "Running node-driver-registrar" mode=""
+I0724 16:12:36.488236       1 main.go:172] "Attempting to open a gRPC connection" csiAddress="/csi/csi.sock"
+I0724 16:12:42.881692       1 main.go:180] "Calling CSI driver to discover driver name"
+I0724 16:12:42.885121       1 main.go:189] "CSI driver name" csiDriverName="file.csi.azure.com"
+I0724 16:12:42.885158       1 node_register.go:56] "Starting Registration Server" socketPath="/registration/file.csi.azure.com-reg.sock"
+I0724 16:12:42.885358       1 node_register.go:66] "Registration Server started" socketPath="/registration/file.csi.azure.com-reg.sock"
+I0724 16:12:42.885422       1 node_register.go:96] "Skipping HTTP server"
+I0724 16:12:43.471462       1 main.go:96] "Received GetInfo call" request="&InfoRequest{}"
+I0724 16:12:43.497494       1 main.go:108] "Received NotifyRegistrationStatus call" status="&RegistrationStatus{PluginRegistered:true,Error:,}"
+==== END logs for container node-driver-registrar of pod kube-system/csi-azurefile-node-gccxj ====
+==== START logs for container azurefile of pod kube-system/csi-azurefile-node-gccxj ====
+I0724 16:12:42.659011       1 main.go:95] set up prometheus server on [::]:29615
+I0724 16:12:42.659113       1 main.go:70] Sys info: NumCPU: 4 MAXPROC: 2
+I0724 16:12:42.659257       1 azurefile.go:398] 
+DRIVER INFORMATION:
+-------------------
+Build Date: "2025-05-28T12:01:10Z"
+Compiler: gc
+Driver Name: file.csi.azure.com
+Driver Version: v1.32.4
+Git Commit: eb0026ca0dd6471f40cca8e67b06bdc9268f339b
+Go Version: go1.24.2
+Platform: linux/amd64
+
+Streaming logs below:
+I0724 16:12:42.659269       1 azurefile.go:406] driver userAgent: file.csi.azure.com/v1.32.4
+I0724 16:12:42.659371       1 azure.go:87] set QPS(25.000000) and QPS Burst(50) for driver kubeClient
+I0724 16:12:42.659655       1 azure.go:103] reading cloud config from secret kube-system/azure-cloud-provider
+I0724 16:12:42.676539       1 azure.go:113] InitializeCloudFromSecret: failed to get cloud config from secret kube-system/azure-cloud-provider: secrets "azure-cloud-provider" not found
+I0724 16:12:42.676556       1 azure.go:121] could not read cloud config from secret kube-system/azure-cloud-provider
+I0724 16:12:42.676564       1 azure.go:124] AZURE_CREDENTIAL_FILE env var set as /etc/kubernetes/azure.json
+I0724 16:12:42.677540       1 azure.go:607] Azure cloudprovider using try backoff: retries=6, exponent=1.500000, duration=5, jitter=1.000000
+I0724 16:12:42.678127       1 azure.go:421] "Setting up ARM client factory for network resources" subscriptionID="eaef3242-e7b0-4641-810e-5d0fcc149659"
+I0724 16:12:42.678440       1 azure.go:429] "Setting up ARM client factory for compute resources" subscriptionID="eaef3242-e7b0-4641-810e-5d0fcc149659"
+I0724 16:12:42.678472       1 azure.go:181] starting node server on node(aks-systempool-67290672-vmss000002)
+I0724 16:12:42.678498       1 azurefile.go:411] cloud: AzurePublicCloud, location: westus3, rg: MC_arc-test-kv_auto-aks_westus3, VnetName: aks-vnet-40244526, VnetResourceGroup: , SubnetName: aks-subnet
+I0724 16:12:42.714511       1 mount_linux.go:334] Detected umount with safe 'not mounted' behavior
+I0724 16:12:42.714856       1 driver.go:93] Enabling controller service capability: CREATE_DELETE_VOLUME
+I0724 16:12:42.714869       1 driver.go:93] Enabling controller service capability: CREATE_DELETE_SNAPSHOT
+I0724 16:12:42.714873       1 driver.go:93] Enabling controller service capability: EXPAND_VOLUME
+I0724 16:12:42.714875       1 driver.go:93] Enabling controller service capability: SINGLE_NODE_MULTI_WRITER
+I0724 16:12:42.714878       1 driver.go:93] Enabling controller service capability: CLONE_VOLUME
+I0724 16:12:42.714885       1 driver.go:112] Enabling volume access mode: SINGLE_NODE_WRITER
+I0724 16:12:42.714888       1 driver.go:112] Enabling volume access mode: SINGLE_NODE_READER_ONLY
+I0724 16:12:42.714891       1 driver.go:112] Enabling volume access mode: SINGLE_NODE_SINGLE_WRITER
+I0724 16:12:42.714894       1 driver.go:112] Enabling volume access mode: SINGLE_NODE_MULTI_WRITER
+I0724 16:12:42.714896       1 driver.go:112] Enabling volume access mode: MULTI_NODE_READER_ONLY
+I0724 16:12:42.714899       1 driver.go:112] Enabling volume access mode: MULTI_NODE_SINGLE_WRITER
+I0724 16:12:42.714901       1 driver.go:112] Enabling volume access mode: MULTI_NODE_MULTI_WRITER
+I0724 16:12:42.714908       1 driver.go:103] Enabling node service capability: STAGE_UNSTAGE_VOLUME
+I0724 16:12:42.714927       1 driver.go:103] Enabling node service capability: SINGLE_NODE_MULTI_WRITER
+I0724 16:12:42.714940       1 driver.go:103] Enabling node service capability: VOLUME_MOUNT_GROUP
+I0724 16:12:42.714943       1 driver.go:103] Enabling node service capability: GET_VOLUME_STATS
+I0724 16:12:42.718351       1 azurefile.go:1361] node(aks-systempool-67290672-vmss000002) labels: kataVMIsolationLabel(), kataRuntimeLabel()
+I0724 16:12:42.882299       1 utils.go:105] GRPC call: /csi.v1.Identity/GetPluginInfo
+I0724 16:12:42.882318       1 utils.go:106] GRPC request: {}
+I0724 16:12:42.883886       1 utils.go:112] GRPC response: {"name":"file.csi.azure.com","vendor_version":"v1.32.4"}
+I0724 16:12:43.469102       1 utils.go:105] GRPC call: /csi.v1.Identity/GetPluginInfo
+I0724 16:12:43.469166       1 utils.go:106] GRPC request: {}
+I0724 16:12:43.469266       1 utils.go:112] GRPC response: {"name":"file.csi.azure.com","vendor_version":"v1.32.4"}
+I0724 16:12:43.472333       1 utils.go:105] GRPC call: /csi.v1.Node/NodeGetInfo
+I0724 16:12:43.472348       1 utils.go:106] GRPC request: {}
+I0724 16:12:43.472449       1 utils.go:112] GRPC response: {"node_id":"aks-systempool-67290672-vmss000002"}
+==== END logs for container azurefile of pod kube-system/csi-azurefile-node-gccxj ====

@@ -1,0 +1,22 @@
+==== START logs for container autoscaler of pod kube-system/konnectivity-agent-autoscaler-b456457b-xszjg ====
+I0724 16:13:34.694208       1 autoscaler.go:49] Scaling Namespace: kube-system, Target: deployment/konnectivity-agent
+I0724 16:13:34.802918       1 plugin.go:50] Set control mode to ladder
+I0724 16:13:34.802937       1 ladder_controller.go:73] Detected ConfigMap version change (old:  new: 439) - rebuilding lookup entries
+I0724 16:13:34.802944       1 ladder_controller.go:74] Params from apiserver: 
+{
+  "coresToReplicas": [],
+  "nodesToReplicas":
+  [
+    [1, 2],
+    [100, 3],
+    [250, 4],
+    [500, 5],
+    [1000, 6],
+    [1500, 7],
+    [2000, 8],
+    [5000, 10]
+  ]
+}
+I0724 16:13:34.806565       1 k8sclient.go:264] Cluster status: SchedulableNodes[3], TotalNodes[3], SchedulableCores[12], TotalCores[12]
+I0724 16:13:34.806581       1 k8sclient.go:265] Replicas are not as expected : updating replicas from 1 to 2
+==== END logs for container autoscaler of pod kube-system/konnectivity-agent-autoscaler-b456457b-xszjg ====

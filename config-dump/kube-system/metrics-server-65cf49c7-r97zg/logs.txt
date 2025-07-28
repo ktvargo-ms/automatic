@@ -1,0 +1,228 @@
+==== START logs for container metrics-server-vpa of pod kube-system/metrics-server-65cf49c7-r97zg ====
+I0724 16:13:39.991901       1 pod_nanny.go:86] Invoked by [/pod_nanny --config-dir=/etc/config --cpu=150m --extra-cpu=0.5m --memory=100Mi --extra-memory=4Mi --poll-period=180000 --threshold=5 --deployment=metrics-server --container=metrics-server]
+I0724 16:13:39.991975       1 pod_nanny.go:87] Version: 1.8.23
+I0724 16:13:39.991996       1 pod_nanny.go:109] Watching namespace: kube-system, pod: metrics-server-65cf49c7-r97zg, container: metrics-server.
+I0724 16:13:39.992002       1 pod_nanny.go:110] storage: MISSING, extra_storage: 0Gi
+I0724 16:13:39.992424       1 pod_nanny.go:214] Failed to read data from config file "/etc/config/NannyConfiguration": open /etc/config/NannyConfiguration: no such file or directory, using default parameters
+I0724 16:13:39.992443       1 pod_nanny.go:144] cpu: 150m, extra_cpu: 0.5m, memory: 100Mi, extra_memory: 4Mi
+I0724 16:13:39.992452       1 pod_nanny.go:278] Resources: [{Base:{i:{value:150 scale:-3} d:{Dec:<nil>} s:150m Format:DecimalSI} ExtraPerResource:{i:{value:5 scale:-4} d:{Dec:<nil>} s: Format:DecimalSI} Name:cpu} {Base:{i:{value:104857600 scale:0} d:{Dec:<nil>} s:100Mi Format:BinarySI} ExtraPerResource:{i:{value:4194304 scale:0} d:{Dec:<nil>} s:4Mi Format:BinarySI} Name:memory}]
+==== END logs for container metrics-server-vpa of pod kube-system/metrics-server-65cf49c7-r97zg ====
+==== START logs for container metrics-server of pod kube-system/metrics-server-65cf49c7-r97zg ====
+I0724 16:13:42.041092       1 serving.go:374] Generated self-signed cert (/tmp/apiserver.crt, /tmp/apiserver.key)
+I0724 16:13:43.264873       1 handler.go:275] Adding GroupVersion metrics.k8s.io v1beta1 to ResourceManager
+I0724 16:13:43.442828       1 requestheader_controller.go:169] Starting RequestHeaderAuthRequestController
+I0724 16:13:43.442826       1 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::client-ca-file"
+I0724 16:13:43.442849       1 shared_informer.go:311] Waiting for caches to sync for RequestHeaderAuthRequestController
+I0724 16:13:43.442853       1 shared_informer.go:311] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I0724 16:13:43.442878       1 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file"
+I0724 16:13:43.442886       1 shared_informer.go:311] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I0724 16:13:43.443258       1 dynamic_serving_content.go:132] "Starting controller" name="serving-cert::/tmp/apiserver.crt::/tmp/apiserver.key"
+I0724 16:13:43.443463       1 secure_serving.go:213] Serving securely on [::]:4443
+I0724 16:13:43.443500       1 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I0724 16:13:43.543199       1 shared_informer.go:318] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I0724 16:13:43.543215       1 shared_informer.go:318] Caches are synced for RequestHeaderAuthRequestController
+I0724 16:13:43.543204       1 shared_informer.go:318] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+E0724 16:18:24.938888       1 timeout.go:142] post-timeout activity - time-elapsed: 588.244µs, GET "/apis" result: <nil>
+E0724 16:18:24.943448       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:18:24.946104       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:18:24.945759       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:18:24.945934       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:18:24.954332       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:18:24.954366       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:18:24.954671       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:18:24.954691       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:18:24.955359       1 timeout.go:142] post-timeout activity - time-elapsed: 15.727875ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:18:24.955383       1 timeout.go:142] post-timeout activity - time-elapsed: 16.427383ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:18:24.955709       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:18:25.041081       1 timeout.go:142] post-timeout activity - time-elapsed: 101.491804ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:07.839311       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:07.839479       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:07.847961       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:07.847982       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:07.848184       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:07.848492       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:07.848671       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:07.850253       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:07.936500       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:07.936524       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:07.936669       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:07.936741       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:07.936925       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:07.937725       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:07.937768       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:07.937996       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:07.938071       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:07.938234       1 timeout.go:142] post-timeout activity - time-elapsed: 100.622296ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:07.938327       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:07.939404       1 timeout.go:142] post-timeout activity - time-elapsed: 91.641706ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:07.939433       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:07.939443       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:07.939450       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:07.940261       1 timeout.go:142] post-timeout activity - time-elapsed: 4.163495ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:07.940289       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:07.940322       1 timeout.go:142] post-timeout activity - time-elapsed: 4.186314ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:07.940583       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:07.940610       1 timeout.go:142] post-timeout activity - time-elapsed: 103.296553ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:07.940626       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:07.941439       1 timeout.go:142] post-timeout activity - time-elapsed: 93.714434ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:07.941460       1 timeout.go:142] post-timeout activity - time-elapsed: 5.280294ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:07.942276       1 timeout.go:142] post-timeout activity - time-elapsed: 104.875779ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.736581       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.736607       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.736750       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.736854       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.736996       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.737035       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.737088       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.737188       1 timeout.go:142] post-timeout activity - time-elapsed: 790.418µs, GET "/apis" result: <nil>
+E0724 16:19:09.737263       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.737375       1 timeout.go:142] post-timeout activity - time-elapsed: 917.149µs, GET "/apis" result: <nil>
+E0724 16:19:09.737482       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.737561       1 timeout.go:142] post-timeout activity - time-elapsed: 1.04789ms, GET "/apis" result: <nil>
+E0724 16:19:09.737612       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.737624       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.737660       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.737679       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.737789       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.738042       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.738045       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.738055       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.738228       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.738266       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.738276       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.936376       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.738675       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.738676       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.738690       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.738958       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.739160       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.739170       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.739177       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.739183       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.739196       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.739542       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.739715       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.739924       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.740328       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.740508       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.740528       1 timeout.go:142] post-timeout activity - time-elapsed: 2.779375ms, GET "/apis" result: <nil>
+E0724 16:19:09.740711       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.740892       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.741100       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.741192       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.741206       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.741211       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.741227       1 timeout.go:142] post-timeout activity - time-elapsed: 5.206814ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.741243       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.741251       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.741395       1 timeout.go:142] post-timeout activity - time-elapsed: 4.114696ms, GET "/apis" result: <nil>
+E0724 16:19:09.744149       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.838627       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.937443       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.937491       1 timeout.go:142] post-timeout activity - time-elapsed: 200.580836ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.937511       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.937540       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.937558       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.937562       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.937577       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.937579       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.937637       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.937670       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.937702       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.937736       1 timeout.go:142] post-timeout activity - time-elapsed: 201.658669ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.937762       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.937748       1 timeout.go:142] post-timeout activity - time-elapsed: 201.390129ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.937756       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.937777       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.937789       1 timeout.go:142] post-timeout activity - time-elapsed: 201.649548ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.937796       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.937814       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.937820       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.937827       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.937840       1 timeout.go:142] post-timeout activity - time-elapsed: 201.68699ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.937801       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.937847       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.937863       1 timeout.go:142] post-timeout activity - time-elapsed: 201.547516ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.937887       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.938276       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.938680       1 timeout.go:142] post-timeout activity - time-elapsed: 202.485604ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.938710       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.938725       1 timeout.go:142] post-timeout activity - time-elapsed: 202.473387ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.938742       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.938795       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.938820       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.938829       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.938837       1 timeout.go:142] post-timeout activity - time-elapsed: 200.154215ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.938843       1 timeout.go:142] post-timeout activity - time-elapsed: 201.15628ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.938848       1 timeout.go:142] post-timeout activity - time-elapsed: 202.554214ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.938861       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.938876       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.938888       1 timeout.go:142] post-timeout activity - time-elapsed: 201.162304ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.938900       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.938908       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:09.938918       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.938929       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.938938       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.938949       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.938959       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:09.939149       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:09.939758       1 timeout.go:142] post-timeout activity - time-elapsed: 202.600777ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.939776       1 timeout.go:142] post-timeout activity - time-elapsed: 200.600187ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:09.939790       1 timeout.go:142] post-timeout activity - time-elapsed: 202.591668ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.035706       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:10.035813       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:10.035884       1 timeout.go:142] post-timeout activity - time-elapsed: 291.964561ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.035931       1 timeout.go:142] post-timeout activity - time-elapsed: 197.513714ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.035950       1 timeout.go:142] post-timeout activity - time-elapsed: 298.151538ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.035962       1 timeout.go:142] post-timeout activity - time-elapsed: 298.131533ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.036017       1 timeout.go:142] post-timeout activity - time-elapsed: 294.792777ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.036050       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:10.036094       1 timeout.go:142] post-timeout activity - time-elapsed: 296.774049ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.036131       1 timeout.go:142] post-timeout activity - time-elapsed: 296.869006ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.036148       1 timeout.go:142] post-timeout activity - time-elapsed: 296.809169ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.036184       1 timeout.go:142] post-timeout activity - time-elapsed: 298.92135ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.036211       1 timeout.go:142] post-timeout activity - time-elapsed: 298.347761ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.036741       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:10.037074       1 timeout.go:142] post-timeout activity - time-elapsed: 181.608µs, GET "/apis" result: <nil>
+E0724 16:19:10.037238       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:10.037402       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:10.037562       1 timeout.go:142] post-timeout activity - time-elapsed: 299.795655ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.037584       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:10.037662       1 timeout.go:142] post-timeout activity - time-elapsed: 99.637742ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.037888       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:10.037936       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:10.037971       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:10.038679       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:10.038679       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:10.038696       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:10.038696       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:10.039737       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:10.039748       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:10.039759       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:10.039763       1 timeout.go:142] post-timeout activity - time-elapsed: 2.394636ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.039764       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:10.039770       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:10.039772       1 timeout.go:142] post-timeout activity - time-elapsed: 3.225689ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.041596       1 timeout.go:142] post-timeout activity - time-elapsed: 3.895848ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.041629       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:10.041604       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:10.041634       1 timeout.go:142] post-timeout activity - time-elapsed: 4.682387ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.042757       1 timeout.go:142] post-timeout activity - time-elapsed: 4.933711ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:10.042781       1 timeout.go:142] post-timeout activity - time-elapsed: 5.000948ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:27.336717       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:27.336746       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:27.337769       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:27.337796       1 timeout.go:142] post-timeout activity - time-elapsed: 1.644647ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:27.340347       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:27.343811       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:27.342840       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:27.343705       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0724 16:19:27.344983       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:27.345057       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:27.345069       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0724 16:19:27.345115       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:27.347579       1 timeout.go:142] post-timeout activity - time-elapsed: 7.68132ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:27.347599       1 timeout.go:142] post-timeout activity - time-elapsed: 4.501149ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+E0724 16:19:27.347634       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0724 16:19:27.435712       1 timeout.go:142] post-timeout activity - time-elapsed: 98.790559ms, GET "/apis/metrics.k8s.io/v1beta1" result: <nil>
+==== END logs for container metrics-server of pod kube-system/metrics-server-65cf49c7-r97zg ====

@@ -1,0 +1,251 @@
+==== START logs for container updater of pod kube-system/vpa-updater-6df668b9b-b9tk9 ====
+I0724 16:13:57.681586       1 flags.go:57] FLAG: --add-dir-header="false"
+I0724 16:13:57.681645       1 flags.go:57] FLAG: --address=":8943"
+I0724 16:13:57.681647       1 flags.go:57] FLAG: --alsologtostderr="false"
+I0724 16:13:57.681649       1 flags.go:57] FLAG: --evict-after-oom-threshold="10m0s"
+I0724 16:13:57.681651       1 flags.go:57] FLAG: --eviction-rate-burst="1"
+I0724 16:13:57.681652       1 flags.go:57] FLAG: --eviction-rate-limit="-1"
+I0724 16:13:57.681654       1 flags.go:57] FLAG: --eviction-tolerance="0.5"
+I0724 16:13:57.681656       1 flags.go:57] FLAG: --ignored-vpa-object-namespaces=""
+I0724 16:13:57.681657       1 flags.go:57] FLAG: --in-recommendation-bounds-eviction-lifetime-threshold="12h0m0s"
+I0724 16:13:57.681660       1 flags.go:57] FLAG: --kube-api-burst="10"
+I0724 16:13:57.681662       1 flags.go:57] FLAG: --kube-api-qps="5"
+I0724 16:13:57.681663       1 flags.go:57] FLAG: --kubeconfig=""
+I0724 16:13:57.681665       1 flags.go:57] FLAG: --leader-elect="false"
+I0724 16:13:57.681667       1 flags.go:57] FLAG: --leader-elect-lease-duration="15s"
+I0724 16:13:57.681670       1 flags.go:57] FLAG: --leader-elect-renew-deadline="10s"
+I0724 16:13:57.681671       1 flags.go:57] FLAG: --leader-elect-resource-lock="leases"
+I0724 16:13:57.681674       1 flags.go:57] FLAG: --leader-elect-resource-name="vpa-updater"
+I0724 16:13:57.681676       1 flags.go:57] FLAG: --leader-elect-resource-namespace="kube-system"
+I0724 16:13:57.681678       1 flags.go:57] FLAG: --leader-elect-retry-period="2s"
+I0724 16:13:57.681680       1 flags.go:57] FLAG: --log-backtrace-at=":0"
+I0724 16:13:57.681683       1 flags.go:57] FLAG: --log-dir=""
+I0724 16:13:57.681688       1 flags.go:57] FLAG: --log-file=""
+I0724 16:13:57.681691       1 flags.go:57] FLAG: --log-file-max-size="1800"
+I0724 16:13:57.681694       1 flags.go:57] FLAG: --logtostderr="true"
+I0724 16:13:57.681696       1 flags.go:57] FLAG: --min-replicas="2"
+I0724 16:13:57.681706       1 flags.go:57] FLAG: --one-output="false"
+I0724 16:13:57.681713       1 flags.go:57] FLAG: --pod-update-threshold="0.1"
+I0724 16:13:57.681716       1 flags.go:57] FLAG: --skip-headers="false"
+I0724 16:13:57.681719       1 flags.go:57] FLAG: --skip-log-headers="false"
+I0724 16:13:57.681721       1 flags.go:57] FLAG: --stderrthreshold="0"
+I0724 16:13:57.681723       1 flags.go:57] FLAG: --updater-interval="1m0s"
+I0724 16:13:57.681726       1 flags.go:57] FLAG: --use-admission-controller-status="true"
+I0724 16:13:57.681728       1 flags.go:57] FLAG: --v="4"
+I0724 16:13:57.681731       1 flags.go:57] FLAG: --vmodule=""
+I0724 16:13:57.681734       1 flags.go:57] FLAG: --vpa-object-namespace=""
+I0724 16:13:57.681746       1 main.go:95] Vertical Pod Autoscaler 1.2.1 Updater
+I0724 16:13:57.683102       1 reflector.go:289] Starting reflector *v1.ReplicationController (10m0s) from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:13:57.683120       1 reflector.go:325] Listing and watching *v1.ReplicationController from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:13:57.782988       1 shared_informer.go:341] caches populated
+I0724 16:13:57.783006       1 fetcher.go:99] Initial sync of ReplicationController completed
+I0724 16:13:57.783173       1 reflector.go:289] Starting reflector *v1.Job (10m0s) from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:13:57.783186       1 reflector.go:325] Listing and watching *v1.Job from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:13:57.883418       1 shared_informer.go:341] caches populated
+I0724 16:13:57.883452       1 fetcher.go:99] Initial sync of Job completed
+I0724 16:13:57.883688       1 reflector.go:289] Starting reflector *v1.CronJob (10m0s) from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:13:57.883703       1 reflector.go:325] Listing and watching *v1.CronJob from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:13:57.983966       1 shared_informer.go:341] caches populated
+I0724 16:13:57.983982       1 fetcher.go:99] Initial sync of CronJob completed
+I0724 16:13:57.984142       1 reflector.go:289] Starting reflector *v1.DaemonSet (10m0s) from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:13:57.984151       1 reflector.go:325] Listing and watching *v1.DaemonSet from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:13:58.084834       1 shared_informer.go:341] caches populated
+I0724 16:13:58.084852       1 fetcher.go:99] Initial sync of DaemonSet completed
+I0724 16:13:58.085052       1 reflector.go:289] Starting reflector *v1.Deployment (10m0s) from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:13:58.085068       1 reflector.go:325] Listing and watching *v1.Deployment from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:13:58.185723       1 shared_informer.go:341] caches populated
+I0724 16:13:58.185749       1 fetcher.go:99] Initial sync of Deployment completed
+I0724 16:13:58.185968       1 reflector.go:289] Starting reflector *v1.ReplicaSet (10m0s) from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:13:58.185983       1 reflector.go:325] Listing and watching *v1.ReplicaSet from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:13:58.286008       1 shared_informer.go:341] caches populated
+I0724 16:13:58.286038       1 fetcher.go:99] Initial sync of ReplicaSet completed
+I0724 16:13:58.286234       1 reflector.go:289] Starting reflector *v1.StatefulSet (10m0s) from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:13:58.286248       1 reflector.go:325] Listing and watching *v1.StatefulSet from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:13:58.386642       1 shared_informer.go:341] caches populated
+I0724 16:13:58.386660       1 fetcher.go:99] Initial sync of StatefulSet completed
+I0724 16:13:58.386795       1 shared_informer.go:341] caches populated
+I0724 16:13:58.386804       1 controller_fetcher.go:141] Initial sync of CronJob completed
+I0724 16:13:58.386822       1 shared_informer.go:341] caches populated
+I0724 16:13:58.386827       1 controller_fetcher.go:141] Initial sync of DaemonSet completed
+I0724 16:13:58.386834       1 shared_informer.go:341] caches populated
+I0724 16:13:58.386839       1 controller_fetcher.go:141] Initial sync of Deployment completed
+I0724 16:13:58.386843       1 shared_informer.go:341] caches populated
+I0724 16:13:58.386848       1 controller_fetcher.go:141] Initial sync of ReplicaSet completed
+I0724 16:13:58.386851       1 shared_informer.go:341] caches populated
+I0724 16:13:58.386861       1 controller_fetcher.go:141] Initial sync of StatefulSet completed
+I0724 16:13:58.386865       1 shared_informer.go:341] caches populated
+I0724 16:13:58.386871       1 controller_fetcher.go:141] Initial sync of ReplicationController completed
+I0724 16:13:58.386875       1 shared_informer.go:341] caches populated
+I0724 16:13:58.386879       1 controller_fetcher.go:141] Initial sync of Job completed
+W0724 16:13:58.386851       1 shared_informer.go:459] The sharedIndexInformer has started, run more than once is not allowed
+W0724 16:13:58.386902       1 shared_informer.go:459] The sharedIndexInformer has started, run more than once is not allowed
+W0724 16:13:58.386909       1 shared_informer.go:459] The sharedIndexInformer has started, run more than once is not allowed
+W0724 16:13:58.386917       1 shared_informer.go:459] The sharedIndexInformer has started, run more than once is not allowed
+W0724 16:13:58.386920       1 shared_informer.go:459] The sharedIndexInformer has started, run more than once is not allowed
+W0724 16:13:58.386923       1 shared_informer.go:459] The sharedIndexInformer has started, run more than once is not allowed
+W0724 16:13:58.386927       1 shared_informer.go:459] The sharedIndexInformer has started, run more than once is not allowed
+I0724 16:13:58.387064       1 reflector.go:289] Starting reflector *v1.LimitRange (10m0s) from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/limitrange/limit_range_calculator.go:60
+I0724 16:13:58.387076       1 reflector.go:325] Listing and watching *v1.LimitRange from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/limitrange/limit_range_calculator.go:60
+I0724 16:13:58.487509       1 shared_informer.go:341] caches populated
+I0724 16:13:58.487533       1 updater.go:254] Rate limit disabled
+I0724 16:13:58.487725       1 reflector.go:289] Starting reflector *v1.ReplicationController (1m0s) from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387
+I0724 16:13:58.487763       1 reflector.go:325] Listing and watching *v1.ReplicationController from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387
+I0724 16:13:58.588098       1 shared_informer.go:341] caches populated
+I0724 16:13:58.588321       1 reflector.go:289] Starting reflector *v1.StatefulSet (1m0s) from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387
+I0724 16:13:58.588342       1 reflector.go:325] Listing and watching *v1.StatefulSet from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387
+I0724 16:13:58.688391       1 shared_informer.go:341] caches populated
+I0724 16:13:58.688576       1 reflector.go:289] Starting reflector *v1.ReplicaSet (1m0s) from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387
+I0724 16:13:58.688591       1 reflector.go:325] Listing and watching *v1.ReplicaSet from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387
+I0724 16:13:58.789099       1 shared_informer.go:341] caches populated
+I0724 16:13:58.789279       1 reflector.go:289] Starting reflector *v1.DaemonSet (1m0s) from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387
+I0724 16:13:58.789291       1 reflector.go:325] Listing and watching *v1.DaemonSet from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387
+I0724 16:13:58.890168       1 shared_informer.go:341] caches populated
+I0724 16:13:58.890344       1 reflector.go:289] Starting reflector *v1.VerticalPodAutoscaler (1h0m0s) from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/vpa/api.go:90
+I0724 16:13:58.890356       1 reflector.go:325] Listing and watching *v1.VerticalPodAutoscaler from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/vpa/api.go:90
+I0724 16:13:58.990964       1 shared_informer.go:341] caches populated
+I0724 16:13:58.990987       1 api.go:94] Initial VPA synced successfully
+I0724 16:13:58.991133       1 reflector.go:289] Starting reflector *v1.Pod (1h0m0s) from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/logic/updater.go:302
+I0724 16:13:58.991190       1 reflector.go:325] Listing and watching *v1.Pod from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/logic/updater.go:302
+W0724 16:14:58.997003       1 updater.go:166] no VPA objects to process
+W0724 16:15:58.997276       1 updater.go:166] no VPA objects to process
+W0724 16:16:58.995877       1 updater.go:166] no VPA objects to process
+W0724 16:17:58.997660       1 updater.go:166] no VPA objects to process
+W0724 16:18:58.996813       1 updater.go:166] no VPA objects to process
+I0724 16:19:02.787665       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.Job total 19 items received
+I0724 16:19:11.650628       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/logic/updater.go:302: Watch close - *v1.Pod total 73 items received
+I0724 16:19:11.651250       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.ReplicationController total 0 items received
+I0724 16:19:11.651498       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.ReplicationController total 0 items received
+I0724 16:19:11.651619       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/limitrange/limit_range_calculator.go:60: Watch close - *v1.LimitRange total 4 items received
+I0724 16:19:11.653533       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.Job total 0 items received
+I0724 16:19:11.653619       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.CronJob total 0 items received
+I0724 16:19:11.657799       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.StatefulSet total 0 items received
+I0724 16:19:11.657980       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.Deployment total 47 items received
+I0724 16:19:11.658135       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.StatefulSet total 0 items received
+I0724 16:19:11.658262       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.DaemonSet total 24 items received
+I0724 16:19:11.658314       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.DaemonSet total 24 items received
+I0724 16:19:11.658379       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.ReplicaSet total 50 items received
+I0724 16:19:11.658564       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.ReplicaSet total 50 items received
+I0724 16:19:11.663653       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/vpa/api.go:90: Watch close - *v1.VerticalPodAutoscaler total 0 items received
+I0724 16:19:11.679761       1 reflector.go:445] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/vpa/api.go:90: watch of *v1.VerticalPodAutoscaler closed with: too old resource version: 2687 (20169)
+I0724 16:19:11.679852       1 reflector.go:445] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: watch of *v1.ReplicationController closed with: too old resource version: 2550 (7919)
+I0724 16:19:11.680120       1 reflector.go:445] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: watch of *v1.CronJob closed with: too old resource version: 2562 (7943)
+I0724 16:19:11.680190       1 reflector.go:445] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/limitrange/limit_range_calculator.go:60: watch of *v1.LimitRange closed with: too old resource version: 3482 (7883)
+I0724 16:19:11.680221       1 reflector.go:445] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: watch of *v1.StatefulSet closed with: too old resource version: 2606 (8031)
+I0724 16:19:11.680316       1 reflector.go:445] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: watch of *v1.ReplicationController closed with: too old resource version: 2550 (7919)
+I0724 16:19:11.680327       1 reflector.go:445] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: watch of *v1.StatefulSet closed with: too old resource version: 2606 (8031)
+I0724 16:19:12.611259       1 reflector.go:325] Listing and watching *v1.StatefulSet from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387
+I0724 16:19:12.666912       1 reflector.go:325] Listing and watching *v1.ReplicationController from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387
+I0724 16:19:12.743006       1 reflector.go:325] Listing and watching *v1.CronJob from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:19:12.905233       1 reflector.go:325] Listing and watching *v1.LimitRange from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/limitrange/limit_range_calculator.go:60
+I0724 16:19:12.971100       1 reflector.go:325] Listing and watching *v1.ReplicationController from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+I0724 16:19:13.059619       1 reflector.go:325] Listing and watching *v1.VerticalPodAutoscaler from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/vpa/api.go:90
+I0724 16:19:13.143218       1 reflector.go:325] Listing and watching *v1.StatefulSet from k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94
+W0724 16:19:59.010590       1 updater.go:166] no VPA objects to process
+W0724 16:20:59.011347       1 updater.go:166] no VPA objects to process
+W0724 16:21:59.010249       1 updater.go:166] no VPA objects to process
+W0724 16:22:59.010911       1 updater.go:166] no VPA objects to process
+W0724 16:23:59.006321       1 updater.go:166] no VPA objects to process
+W0724 16:24:58.996422       1 updater.go:166] no VPA objects to process
+I0724 16:25:02.678312       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.DaemonSet total 1 items received
+W0724 16:25:59.003813       1 updater.go:166] no VPA objects to process
+I0724 16:26:15.671111       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.ReplicationController total 3 items received
+I0724 16:26:30.675487       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/logic/updater.go:302: Watch close - *v1.Pod total 19 items received
+I0724 16:26:42.747248       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.CronJob total 3 items received
+W0724 16:26:59.011242       1 updater.go:166] no VPA objects to process
+I0724 16:27:01.974613       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.ReplicationController total 4 items received
+I0724 16:27:02.677646       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.Deployment total 8 items received
+I0724 16:27:10.148056       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.StatefulSet total 3 items received
+I0724 16:27:11.909986       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/limitrange/limit_range_calculator.go:60: Watch close - *v1.LimitRange total 7 items received
+I0724 16:27:23.676107       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.Job total 14 items received
+W0724 16:27:59.011191       1 updater.go:166] no VPA objects to process
+I0724 16:28:00.615725       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.StatefulSet total 5 items received
+I0724 16:28:40.679449       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.ReplicaSet total 5 items received
+I0724 16:28:55.679177       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.ReplicaSet total 5 items received
+W0724 16:28:59.013724       1 updater.go:166] no VPA objects to process
+I0724 16:29:04.678612       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.DaemonSet total 5 items received
+I0724 16:29:06.064219       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/vpa/api.go:90: Watch close - *v1.VerticalPodAutoscaler total 0 items received
+W0724 16:29:59.001608       1 updater.go:166] no VPA objects to process
+I0724 16:30:23.680864       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.DaemonSet total 3 items received
+W0724 16:30:59.010489       1 updater.go:166] no VPA objects to process
+W0724 16:31:59.001436       1 updater.go:166] no VPA objects to process
+I0724 16:32:23.912361       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/limitrange/limit_range_calculator.go:60: Watch close - *v1.LimitRange total 5 items received
+W0724 16:32:58.996392       1 updater.go:166] no VPA objects to process
+I0724 16:33:27.679253       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/logic/updater.go:302: Watch close - *v1.Pod total 11 items received
+I0724 16:33:27.976818       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.ReplicationController total 7 items received
+I0724 16:33:54.682818       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.ReplicaSet total 7 items received
+W0724 16:33:59.002800       1 updater.go:166] no VPA objects to process
+I0724 16:34:18.618582       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.StatefulSet total 8 items received
+I0724 16:34:41.680228       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.Deployment total 7 items received
+W0724 16:34:59.011175       1 updater.go:166] no VPA objects to process
+I0724 16:35:32.749930       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.CronJob total 9 items received
+I0724 16:35:56.674062       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.ReplicationController total 10 items received
+W0724 16:35:59.001366       1 updater.go:166] no VPA objects to process
+I0724 16:36:42.679135       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.Job total 23 items received
+I0724 16:36:45.067043       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/vpa/api.go:90: Watch close - *v1.VerticalPodAutoscaler total 9 items received
+W0724 16:36:59.006787       1 updater.go:166] no VPA objects to process
+I0724 16:37:03.151484       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.StatefulSet total 10 items received
+W0724 16:37:59.010669       1 updater.go:166] no VPA objects to process
+I0724 16:38:10.680317       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.DaemonSet total 11 items received
+I0724 16:38:36.682661       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.ReplicaSet total 11 items received
+I0724 16:38:45.979446       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.ReplicationController total 7 items received
+W0724 16:38:59.004265       1 updater.go:166] no VPA objects to process
+I0724 16:39:03.683972       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.DaemonSet total 7 items received
+I0724 16:39:15.686275       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.ReplicaSet total 3 items received
+W0724 16:39:58.996499       1 updater.go:166] no VPA objects to process
+I0724 16:40:03.682675       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/logic/updater.go:302: Watch close - *v1.Pod total 12 items received
+I0724 16:40:46.915317       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/limitrange/limit_range_calculator.go:60: Watch close - *v1.LimitRange total 8 items received
+W0724 16:40:58.996906       1 updater.go:166] no VPA objects to process
+W0724 16:41:59.010260       1 updater.go:166] no VPA objects to process
+I0724 16:42:12.752726       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.CronJob total 5 items received
+I0724 16:42:30.676616       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.ReplicationController total 5 items received
+I0724 16:42:56.069796       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/vpa/api.go:90: Watch close - *v1.VerticalPodAutoscaler total 5 items received
+W0724 16:42:59.003729       1 updater.go:166] no VPA objects to process
+I0724 16:43:27.682295       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.Job total 13 items received
+I0724 16:43:33.683364       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.DaemonSet total 6 items received
+I0724 16:43:42.622074       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.StatefulSet total 6 items received
+I0724 16:43:56.982143       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.ReplicationController total 0 items received
+W0724 16:43:59.002346       1 updater.go:166] no VPA objects to process
+I0724 16:44:08.682981       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.Deployment total 8 items received
+I0724 16:44:10.685253       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.ReplicaSet total 6 items received
+I0724 16:44:29.689185       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.ReplicaSet total 7 items received
+W0724 16:44:59.001382       1 updater.go:166] no VPA objects to process
+I0724 16:45:18.685430       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/logic/updater.go:302: Watch close - *v1.Pod total 11 items received
+W0724 16:45:59.003614       1 updater.go:166] no VPA objects to process
+I0724 16:46:05.153293       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.StatefulSet total 8 items received
+I0724 16:46:50.918442       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/limitrange/limit_range_calculator.go:60: Watch close - *v1.LimitRange total 7 items received
+W0724 16:46:59.000793       1 updater.go:166] no VPA objects to process
+I0724 16:47:55.686743       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.DaemonSet total 0 items received
+W0724 16:47:59.009070       1 updater.go:166] no VPA objects to process
+I0724 16:48:17.680579       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.ReplicationController total 2 items received
+I0724 16:48:41.685449       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.Job total 9 items received
+I0724 16:48:54.756533       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.CronJob total 2 items received
+W0724 16:48:59.002334       1 updater.go:166] no VPA objects to process
+I0724 16:49:46.073625       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/vpa/api.go:90: Watch close - *v1.VerticalPodAutoscaler total 1 items received
+I0724 16:49:46.985780       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.ReplicationController total 3 items received
+I0724 16:49:51.625997       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.StatefulSet total 3 items received
+W0724 16:49:59.012503       1 updater.go:166] no VPA objects to process
+W0724 16:50:59.010619       1 updater.go:166] no VPA objects to process
+I0724 16:51:31.692219       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.ReplicaSet total 5 items received
+W0724 16:51:59.001121       1 updater.go:166] no VPA objects to process
+I0724 16:52:21.688327       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/logic/updater.go:302: Watch close - *v1.Pod total 11 items received
+I0724 16:52:41.688006       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.ReplicaSet total 7 items received
+I0724 16:52:46.686753       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.Deployment total 8 items received
+W0724 16:52:59.002260       1 updater.go:166] no VPA objects to process
+I0724 16:53:19.155970       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.StatefulSet total 7 items received
+I0724 16:53:25.686064       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.DaemonSet total 7 items received
+W0724 16:53:59.010375       1 updater.go:166] no VPA objects to process
+I0724 16:54:00.759422       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.CronJob total 6 items received
+I0724 16:54:25.921168       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/limitrange/limit_range_calculator.go:60: Watch close - *v1.LimitRange total 7 items received
+W0724 16:54:59.002290       1 updater.go:166] no VPA objects to process
+I0724 16:55:05.689659       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.DaemonSet total 8 items received
+I0724 16:55:28.683914       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.ReplicationController total 8 items received
+W0724 16:55:59.012153       1 updater.go:166] no VPA objects to process
+I0724 16:56:34.628213       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/eviction/pods_eviction_restriction.go:387: Watch close - *v1.StatefulSet total 6 items received
+I0724 16:56:58.988233       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.ReplicationController total 7 items received
+W0724 16:56:59.011386       1 updater.go:166] no VPA objects to process
+I0724 16:57:08.076659       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/utils/vpa/api.go:90: Watch close - *v1.VerticalPodAutoscaler total 0 items received
+W0724 16:57:59.013734       1 updater.go:166] no VPA objects to process
+I0724 16:58:23.691546       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/updater/logic/updater.go:302: Watch close - *v1.Pod total 11 items received
+I0724 16:58:30.688769       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.Job total 14 items received
+I0724 16:58:31.158812       1 reflector.go:790] k8s.io/autoscaler/vertical-pod-autoscaler/pkg/target/fetcher.go:94: Watch close - *v1.StatefulSet total 0 items received
+==== END logs for container updater of pod kube-system/vpa-updater-6df668b9b-b9tk9 ====
